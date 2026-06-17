@@ -33,6 +33,33 @@
 - Every visual is optional and color-controlled through inputs. Turn off what you
   do not want, restyle what you keep.
 
+## A look at the code
+
+Here is the fair value gap detection, the classic 3-candle imbalance, together
+with the check that hides any gap price has already traded back through, so the
+chart stays focused on imbalances still in play:
+
+```cpp
+// A Fair Value Gap is a 3-candle imbalance. With candle i as the middle one,
+// a bullish gap exists when candle (i-1)'s high sits below candle (i+1)'s low,
+// leaving an untraded pocket the market often returns to fill.
+if(low[i + 1] > high[i - 1])
+{
+   double gap    = low[i + 1] - high[i - 1];
+   bool   filled = BullFVGFilled(i, to, low, high[i - 1]);   // has price returned?
+   if(gap >= minGap && !(InpUnmitigatedOnly && filled))
+      DrawFVGBox(time[i - 1], high[i - 1], low[i + 1], i, to, time, "Bull FVG", InpBullFVGColor);
+}
+
+//--- A gap counts as "filled" once a later candle trades back into it.
+bool BullFVGFilled(int midIdx, int to, const double &low[], double gapBottom)
+{
+   for(int j = midIdx + 2; j <= to; j++)
+      if(low[j] <= gapBottom) return true;
+   return false;
+}
+```
+
 ## Screenshot
 
 ![ICT Liquidity Map on a live chart](screenshots/ict-liquidity-map.png)
