@@ -34,7 +34,8 @@ structure (BOS / CHoCH), order blocks, fair value gaps, liquidity (BSL / SSL,
 equal highs and lows, previous day levels), premium and discount with an OTE
 band, killzone sessions, and a multi-timeframe dashboard with a plain-English
 read of the current picture. Detection runs on closed bars only and never
-repaints. Launching on the MQL5 Market.
+repaints. Now live on the MQL5 Market:
+[SMC and ICT Structure Liquidity Dashboard](https://www.mql5.com/en/market/product/182687).
 
 ![Market structure, order blocks, FVGs, liquidity and premium/discount on one chart](screenshots/SMC/thumbnails/smc-overview-dark-thumb.png)
 
