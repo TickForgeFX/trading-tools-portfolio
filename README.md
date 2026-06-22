@@ -25,16 +25,20 @@ actually matters: clean execution, real risk management, and honest testing. I
 will not sell you a "guaranteed profitable bot," because nobody honest can. I
 build your idea exactly to spec, test it rigorously, and give you the truth.
 
-## Selected work
+## Flagship: Smart Money Concepts by TickForgeFX
 
-1. **Custom Backtesting and Validation Engine (Python).** See
-   [01-backtesting-engine.md](01-backtesting-engine.md)
-2. **TrendBreakoutEA, a risk-managed MQL5 Expert Advisor.** See
-   [02-trend-breakout-ea.md](02-trend-breakout-ea.md)
-3. **ICT Liquidity Map, a custom MQL5 market-structure indicator.** See
-   [03-ict-liquidity-map.md](03-ict-liquidity-map.md)
+A clean, no-repaint Smart Money Concepts indicator for MetaTrader 5. Market
+structure (BOS / CHoCH), order blocks, fair value gaps, liquidity (BSL / SSL,
+equal highs and lows, previous day levels), premium and discount with an OTE
+band, killzone sessions, and a multi-timeframe dashboard with a plain-English
+read of the current picture. Detection runs on closed bars only and never
+repaints. Launching on the MQL5 Market.
+
+![Market structure, order blocks, FVGs, liquidity and premium/discount on one chart](screenshots/SMC/thumbnails/smc-overview-dark-thumb.png)
+
+![Multi-timeframe dashboard with the plain-English read of the current picture](screenshots/SMC/thumbnails/smc-dashboard-dark-thumb.png)
 
 ## Contact
 
-- MQL5 Freelance: https://www.mql5.com/en/users/tickforgefx
+- MQL5: https://www.mql5.com/en/users/tickforgefx
 - Email: TickForgeFX@protonmail.com
