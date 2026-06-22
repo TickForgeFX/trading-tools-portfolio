@@ -1,4 +1,4 @@
-# TickForgeFX: Custom Trading Tools for MT4 & MT5
+# TickForgeFX: Custom Trading Tools for MetaTrader 5
 
 I build and backtest custom trading tools for traders, prop firms, and trading
 communities. If you have a strategy, an indicator idea, or a tool you wish
@@ -7,10 +7,12 @@ before you risk a dollar.
 
 ## What I build
 
-- **Expert Advisors (trading bots)** for MetaTrader 4 and 5, coded from your
-  strategy rules with proper risk management.
-- **Custom indicators** for MetaTrader and TradingView (Pine Script):
-  dashboards, alerts, liquidity tools, session markers, and more.
+- **Expert Advisors (trading bots)** for MetaTrader 5, coded exactly from your
+  strategy rules with proper risk management and tested honestly. You bring the
+  strategy, I build it faithfully and tell you how it holds up before you risk a
+  dollar. MetaTrader 4 (MQL4) builds on request.
+- **Custom indicators** for MetaTrader 5: dashboards, alerts, liquidity tools,
+  session markers, and more. TradingView (Pine Script) on request.
 - **Strategy backtesting and validation.** I test your idea on years of real
   data with conservative, honest assumptions, so you know what is real before
   you trade it.
