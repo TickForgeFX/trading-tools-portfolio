@@ -41,6 +41,19 @@ repaints. Now live on the MQL5 Market:
 
 ![Multi-timeframe dashboard with the plain-English read of the current picture](screenshots/SMC/thumbnails/smc-dashboard-dark-thumb.png)
 
+## Case study: Trend Breakout EA
+
+A worked example of how I build and test a strategy, not a product. A trend-filtered
+Donchian breakout coded exactly to spec, with real risk management and no grid or
+martingale, then backtested honestly with conservative costs. Over two years on US30 H1
+it returned a profit factor of 0.98, a marginal, slightly negative baseline, and the
+case study reports that plainly. The value here is the transparent method and the clean,
+extensible code, never a profit claim.
+
+![Balance and equity curve, range-bound and drifting down over two years](screenshots/TrendBreakoutEA/raw/tbe-equity-curve.png)
+
+Full rules, setup, and numbers: [Trend Breakout EA case study](products/trend-breakout-ea/CASE_STUDY.md).
+
 ## Contact
 
 - MQL5: https://www.mql5.com/en/users/tickforgefx
