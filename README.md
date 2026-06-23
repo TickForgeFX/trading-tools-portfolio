@@ -32,14 +32,15 @@ build your idea exactly to spec, test it rigorously, and give you the truth.
 A clean, no-repaint Smart Money Concepts indicator for MetaTrader 5. Market
 structure (BOS / CHoCH), order blocks, fair value gaps, liquidity (BSL / SSL,
 equal highs and lows, previous day levels), premium and discount with an OTE
-band, killzone sessions, and a multi-timeframe dashboard with a plain-English
-read of the current picture. Detection runs on closed bars only and never
-repaints. Now live on the MQL5 Market:
+band, killzone sessions, and a multi-timeframe dashboard. The panel reads the
+current bias, zone, session, nearest liquidity, and the named key price levels
+at a glance. Detection runs on closed bars only and never repaints. Now live on
+the MQL5 Market:
 [SMC and ICT Structure Liquidity Dashboard](https://www.mql5.com/en/market/product/182687).
 
 ![Market structure, order blocks, FVGs, liquidity and premium/discount on one chart](screenshots/SMC/thumbnails/smc-overview-dark-thumb.png)
 
-![Multi-timeframe dashboard with the plain-English read of the current picture](screenshots/SMC/thumbnails/smc-dashboard-dark-thumb.png)
+![The at-a-glance panel: bias, zone, session, and named key levels, shown on a light chart](screenshots/SMC/thumbnails/smc-dashboard-light-thumb.png)
 
 ## Case study: Trend Breakout EA
 

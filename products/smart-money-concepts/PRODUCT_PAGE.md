@@ -62,6 +62,11 @@ is locked to a symbol, timeframe, or account.
 
 ## Changelog
 
+- v1.1: dashboard upgrade. The Read is promoted to a prominent context line, a confluence
+  panel shows bias, zone, session, and the nearest point of interest as plain factual
+  state, and a new Key Levels section lists named prices: premium, equilibrium, discount,
+  the OTE band, nearest buy-side and sell-side liquidity, and previous day high and low.
+  Panel readability pass on the text. No repaint, no new chart objects, all closed-bar.
 - v1.0: first release. Market structure, order blocks, fair value gaps, liquidity,
   premium and discount with OTE, killzone sessions, the multi-timeframe dashboard, and
   closed-bar alerts.
