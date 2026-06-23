@@ -55,6 +55,8 @@ point: the equity curve is allowed to be honest.
 | Risk per trade | 1.0% |
 | Parameters | defaults above (no per-period optimization) |
 
+![Strategy Tester configuration: random delay, every tick based on real ticks, the full two-year period](../../screenshots/TrendBreakoutEA/raw/tbe-tester-settings.png)
+
 This test commits to a conservative cost model on purpose. Real spread from the tick
 data, plus random-delay execution so fills take realistic slippage. It pulls the result
 down, and that is the point: a number that survives honest costs is worth more than a
