@@ -42,6 +42,21 @@ the MQL5 Market:
 
 ![The at-a-glance panel: bias, zone, session, and named key levels, shown on a light chart](screenshots/SMC/thumbnails/smc-dashboard-light-thumb.png)
 
+## Free tool: Visual Risk and Position Size Calculator
+
+A clean, free position-size calculator for MetaTrader 5. Drop it on any chart and
+drag three lines, Entry, Stop, and Target, to your levels. The panel reads back the
+exact lot size for the percent of your account you choose to risk, the money at risk
+in your account currency, the stop distance, and the reward-to-risk with the potential
+profit at your target. It respects your broker's minimum, maximum, and step, and it
+flags when your account is too small for your chosen risk. No signals, no repaint, just
+the number you need before you place the trade. Free on the MQL5 Market:
+[Visual Risk and Position Size Calculator](https://www.mql5.com/en/market/product/183000).
+
+![The panel: direction, lot size, money at risk, stop distance, and reward-to-risk read off three dragged lines](screenshots/RiskCalculator/thumbnails/rc-panel-thumb.png)
+
+![The calculator on a EURUSD chart with Entry, Stop, and Target lines in place](screenshots/RiskCalculator/thumbnails/rc-eurusd-thumb.png)
+
 ## Case study: Trend Breakout EA
 
 A worked example of how I build and test a strategy, not a product. A trend-filtered
