@@ -57,6 +57,20 @@ the number you need before you place the trade. Free on the MQL5 Market:
 
 ![The calculator on a EURUSD chart with Entry, Stop, and Target lines in place](screenshots/RiskCalculator/thumbnails/rc-eurusd-thumb.png)
 
+## Free tool: ICT Killzone and Session Tracker
+
+A clean, free session tool for MetaTrader 5. A live panel counts down the Sydney, Tokyo,
+London, and New York sessions, which one is open, how long is left, and when the next one
+opens, with each session's name colour-coded so the panel doubles as a legend. On the chart,
+each session's high and low range is drawn as a clean box. Times run on GMT with automatic
+daylight-saving adjustment, so the sessions stay correct through the year without manual
+re-timing. No signals, no repaint. Free on the MQL5 Market:
+[ICT Killzone and Session Tracker](https://www.mql5.com/en/market/product/183024).
+
+![The session panel and four colour-coded session range boxes on a XAUUSD chart](screenshots/SessionKillzoneTracker/thumbnails/skt-xauusd-thumb.png)
+
+![The same tool on a EURUSD chart, sessions tracked across the day](screenshots/SessionKillzoneTracker/thumbnails/skt-eurusd-thumb.png)
+
 ## Case study: Trend Breakout EA
 
 A worked example of how I build and test a strategy, not a product. A trend-filtered
