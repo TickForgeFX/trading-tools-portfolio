@@ -71,6 +71,21 @@ re-timing. No signals, no repaint. Free on the MQL5 Market:
 
 ![The same tool on a EURUSD chart, sessions tracked across the day](screenshots/SessionKillzoneTracker/thumbnails/skt-eurusd-thumb.png)
 
+## Free tool: Daily Weekly Monthly Key Levels
+
+A clean, free reference-levels tool for MetaTrader 5. It draws the levels traders watch all
+day, previous day high, low and close, previous week high and low, the daily and weekly opens,
+and optional previous month high and low, read straight from the broker's own daily, weekly,
+and monthly candles, so there is nothing to configure for your timezone. A compact panel lists
+each level and how far it sits from price in pips. The labels adapt to the chart theme, light
+on dark, dark on a white chart, so they stay readable everywhere. No signals, no repaint. Free
+on the MQL5 Market:
+[Daily Weekly Monthly Key Levels](https://www.mql5.com/en/market/product/183203).
+
+![Key levels and the distance panel on a dark EURUSD chart](screenshots/KeyLevels/thumbnails/kl-dark-thumb.png)
+
+![The same levels on a white XAUUSD chart, labels still readable](screenshots/KeyLevels/thumbnails/kl-light-thumb.png)
+
 ## Case study: Trend Breakout EA
 
 A worked example of how I build and test a strategy, not a product. A trend-filtered
