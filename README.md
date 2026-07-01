@@ -86,6 +86,21 @@ on the MQL5 Market:
 
 ![The same levels on a white XAUUSD chart, labels still readable](screenshots/KeyLevels/thumbnails/kl-light-thumb.png)
 
+## Free tool: ADR Average Daily Range Meter
+
+A clean, free tool for MetaTrader 5 that shows how far this market usually moves in a day, how
+much of that range price has already used, and where the day runs out of room. A live panel
+reads the average daily range over the last N days, how much of it today has used in points and
+percent, and the room left up and down. The projected ADR high and ADR low are drawn on the
+chart, with tags that stay visible when you zoom in. When price has spent an average day's range
+continuation gets less likely and reversals more common, so this keeps that context in front of
+you before you chase a move. No signals, no repaint. Free on the MQL5 Market:
+[ADR Average Daily Range Meter](https://www.mql5.com/en/market/product/183839).
+
+![The ADR panel and the projected day high and low on a dark chart](screenshots/ADRMeter/thumbnails/adr-dark-thumb.png)
+
+![The same tool on a light chart, average range and room left read out](screenshots/ADRMeter/thumbnails/adr-light-thumb.png)
+
 ## Case study: Trend Breakout EA
 
 A worked example of how I build and test a strategy, not a product. A trend-filtered
