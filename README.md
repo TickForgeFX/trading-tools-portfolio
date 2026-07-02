@@ -38,9 +38,11 @@ at a glance. Detection runs on closed bars only and never repaints. Now live on
 the MQL5 Market:
 [SMC and ICT Structure Liquidity Dashboard](https://www.mql5.com/en/market/product/182687).
 
-![Market structure, order blocks, FVGs, liquidity and premium/discount on one chart](screenshots/SMC/thumbnails/smc-overview-dark-thumb.png)
+![The whole structure, one clean read: the multi-timeframe panel plus the on-chart SMC and ICT map](screenshots/SMC/banners/smc-hero-dark.png)
 
-![The at-a-glance panel: bias, zone, session, and named key levels, shown on a light chart](screenshots/SMC/thumbnails/smc-dashboard-light-thumb.png)
+![Structure, order blocks, fair value gaps, liquidity and premium/discount, mapped on one chart](screenshots/SMC/banners/smc-breadth-dark.png)
+
+![Reads clean on any chart: the same toolkit on a light background, labels and zones still legible](screenshots/SMC/banners/smc-adaptive-light.png)
 
 ## Free tool: Visual Risk and Position Size Calculator
 
