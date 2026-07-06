@@ -103,6 +103,56 @@ you before you chase a move. No signals, no repaint. Free on the MQL5 Market:
 
 ![The same tool on a light chart, average range and room left read out](screenshots/ADRMeter/thumbnails/adr-light-thumb.png)
 
+## Free tool: Auto Breakeven Trailing Stop and Partial Close
+
+A clean, free position manager for MetaTrader 5. Attach it to a chart and it looks after the
+trades you already have open: it moves them to break-even once they are in profit, trails the stop
+as they run, and takes a partial off at your target. Every rule is independent and set in points,
+so it works on any symbol the moment you attach it. It manages by symbol and by magic number, or
+everything on the account including trades you placed by hand, and a stop only ever moves to
+protect, never to loosen. The partial is taken once per position and remembered durably, so a
+reload, a recompile, or a terminal restart can never take a second partial off the same trade. It
+never opens a trade and fires no signal. It only manages what is already there. Free on the MQL5
+Market:
+[Auto Breakeven Trailing Stop and Partial Close](https://www.mql5.com/en/market/product/184556).
+
+![The manager panel with break-even, trailing stop, and partial close working on a dark chart](screenshots/AutoTradeManager/banners/atm-hero-dark.png)
+
+![Three tools, one attach: break-even, trailing stop, and partial take-profit explained](screenshots/AutoTradeManager/banners/atm-mechanics-dark.png)
+
+## Free tool: Prop Firm Drawdown and Daily Loss Guard
+
+A clean, free risk panel for MetaTrader 5. It watches the two rails that end most prop-firm
+accounts, the daily loss limit and the overall (max) loss limit, and shows you exactly how close
+you are, live, with a progress bar for each and the cash room left before you breach. The daily
+limit is measured on current equity from your start-of-day balance, so open floating losses count
+the way most firms actually breach, and the overall limit can be static (a fixed floor, the FTMO
+style) or trailing from your peak. It carries a SAFE, CAUTION, or DANGER status and alerts you at a
+warning level and again on a breach. The day's baseline and your peak are stored durably, so a
+restart never resets your day or hides a real drawdown. It never trades and fires no signals. Free
+on the MQL5 Market:
+[Prop Firm Drawdown and Daily Loss Guard](https://www.mql5.com/en/market/product/184431).
+
+![The guard panel showing daily loss and overall drawdown as progress bars toward their limits](screenshots/PropFirmGuard/banners/pfg-hero-dark.png)
+
+![The SAFE, CAUTION, and DANGER states explained](screenshots/PropFirmGuard/banners/pfg-states-dark.png)
+
+## Free tool: Trading Performance Statistics
+
+A clean, free performance panel for MetaTrader 5. It reads your closed trade history and totals the
+numbers most traders never sit down and calculate: net P/L, win rate, profit factor, average win
+versus loss, payoff, expectancy, and your best and worst trade. A trade you closed in parts counts
+as one position, not several, so the numbers match how you actually traded. Filter by period
+(today, this week, this month, the last 7 or 30 days, or all time), by this chart's symbol, or by
+magic number to isolate one strategy. It shows the truth, good or bad, updated as you trade, so a
+vague feeling about your edge becomes a number you can act on. It reads history only and can never
+place or close a trade. Free on the MQL5 Market:
+[Trading Performance Statistics](https://www.mql5.com/en/market/product/184488).
+
+![The statistics panel: net P/L, win rate, profit factor, payoff, and expectancy read off closed history](screenshots/PerformanceStats/banners/ps-hero-dark.png)
+
+![Profit factor, win rate, and expectancy explained](screenshots/PerformanceStats/banners/ps-metrics-dark.png)
+
 ## Case study: Trend Breakout EA
 
 A worked example of how I build and test a strategy, not a product. A trend-filtered
