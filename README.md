@@ -153,6 +153,21 @@ place or close a trade. Free on the MQL5 Market:
 
 ![Profit factor, win rate, and expectancy explained](screenshots/PerformanceStats/banners/ps-metrics-dark.png)
 
+## Free tool: Currency Strength Meter Multi Timeframe
+
+A clean, free currency strength meter for MetaTrader 5. It ranks the eight major currencies (EUR,
+GBP, AUD, NZD, USD, CAD, CHF, JPY) by how they are actually moving across the 28 major pairs, and
+shows which are strong, which are weak, and which way each one is turning. It computes on closed bars
+only, so it does not twitch on every tick the way most free meters do. Each currency carries a
+multi-timeframe alignment strip (four timeframes at a glance) and a momentum arrow, and the panel
+names the cleanest strong-versus-weak pair to watch. It auto-detects your broker's symbol naming, so
+it just works. No signals, no repaint. Free on the MQL5 Market:
+[Currency Strength Meter Multi Timeframe](https://www.mql5.com/en/market/product/184632).
+
+![The strength panel: eight majors ranked, with multi-timeframe cells, momentum arrows and the cleanest-pair read](screenshots/CurrencyStrength/banners/csm-hero-dark.png)
+
+![How to read it: ranked strength, timeframe alignment, and momentum](screenshots/CurrencyStrength/banners/csm-read-dark.png)
+
 ## Case study: Trend Breakout EA
 
 A worked example of how I build and test a strategy, not a product. A trend-filtered
