@@ -44,6 +44,21 @@ the MQL5 Market:
 
 ![Reads clean on any chart: the same toolkit on a light background, labels and zones still legible](screenshots/SMC/banners/smc-adaptive-light.png)
 
+## Paid tool: Trade Manager One Click Risk and Partials
+
+The honest trade cockpit for MetaTrader 5. You decide when to trade; it handles the risk
+sizing, the one-click execution, the full management, and the daily protection. Drag a stop
+line and read the exact lot size for the percent of your account you choose to risk, then open
+with one click: the trade goes on with your stop and target attached. From there it runs auto
+break-even, a trailing stop, and up to three partial take-profits, all set in R, and it locks
+out new entries for the rest of the day when your daily loss limit is hit. Stops only ever move
+to protect, never to loosen. It fires no signals and makes no predictions. On the MQL5 Market:
+[Trade Manager One Click Risk and Partials](https://www.mql5.com/en/market/product/184764).
+
+![The cockpit panel: setup direction, risk-based lot, stop distance and reward-to-risk, with one-click Buy and Sell](screenshots/TradeManager/banners/tm-hero-dark.png)
+
+![One panel, the whole trade: size the position, open in one click, then it auto-manages break-even, trailing, and partials](screenshots/TradeManager/banners/tm-mechanics-dark.png)
+
 ## Free tool: Visual Risk and Position Size Calculator
 
 A clean, free position-size calculator for MetaTrader 5. Drop it on any chart and
