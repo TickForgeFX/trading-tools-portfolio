@@ -59,6 +59,20 @@ to protect, never to loosen. It fires no signals and makes no predictions. On th
 
 ![One panel, the whole trade: size the position, open in one click, then it auto-manages break-even, trailing, and partials](screenshots/TradeManager/banners/tm-mechanics-dark.png)
 
+## Paid tool: Currency Strength Scanner Pro
+
+A currency strength meter that does the next step for you. It ranks the 8 majors by their
+strength, then turns that into a ranked table of the strongest-versus-weakest pairs to trade,
+shows how many timeframes agree on each, and alerts you (popup, push, email, sound) when the
+single best setup forms. Everything is closed-bar, so nothing repaints, and it alerts the one
+best pair rather than a dozen correlated buzzes. Monitor-only: it ranks strength, it does not
+trade or predict. On the MQL5 Market:
+[Currency Strength Scanner Pro](https://www.mql5.com/en/market/product/184937).
+
+![Ranked opportunities: the strongest-versus-weakest pairs by strength gap, direction, and multi-timeframe alignment](screenshots/CurrencyStrengthPro/banners/csp-hero-dark.png)
+
+![The full panel: the 8-major strength grid across four timeframes plus the ranked opportunity table](screenshots/CurrencyStrengthPro/banners/csp-panel-dark.png)
+
 ## Free tool: Visual Risk and Position Size Calculator
 
 A clean, free position-size calculator for MetaTrader 5. Drop it on any chart and
