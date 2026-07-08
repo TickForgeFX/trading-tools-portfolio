@@ -183,6 +183,34 @@ it just works. No signals, no repaint. Free on the MQL5 Market:
 
 ![How to read it: ranked strength, timeframe alignment, and momentum](screenshots/CurrencyStrength/banners/csm-read-dark.png)
 
+## Free tool: Candle Close Countdown Timer
+
+A clean, free countdown for MetaTrader 5. Attach it to any chart and it shows the exact time
+left on the current candle, a progress bar as the candle forms, and a live countdown for a whole
+set of higher timeframes at the same time. Time your entries and exits to the close instead of
+guessing, and know when a higher-timeframe candle is about to print while you work on a lower
+one. Server-time accurate, no signals, no repaint. Free on the MQL5 Market:
+[Candle Close Countdown Timer](https://www.mql5.com/en/market/product/184780).
+
+![The countdown panel: time left on the current candle, a progress bar, and a live multi-timeframe countdown](screenshots/CandleCloseCountdown/banners/ccc-hero-dark.png)
+
+![Everything about the close at a glance: the exact time left, a progress bar, and every timeframe at once](screenshots/CandleCloseCountdown/banners/ccc-mechanics-dark.png)
+
+## Free tool: Round Number Levels
+
+A clean, free round-number indicator for MetaTrader 5. Attach it to any chart and it draws the
+psychological round-number price levels traders watch, the major "00" figures as solid lines and
+the "50" half levels as dotted lines, each labelled with its price. It auto-scales to whatever
+you trade (the 100-pip figures on FX, roughly fifty dollars on gold, five hundred on an index)
+and re-centres as price moves. Distinct from the Daily Weekly Monthly Key Levels tool: those are
+session highs and lows, these are round-number magnets. No signals, no repaint. Free on the MQL5
+Market:
+[Round Number Levels](https://www.mql5.com/en/market/product/184779).
+
+![Round-number levels drawn automatically: solid 00 figures and dotted 50 halves, each labelled with its price](screenshots/RoundNumberLevels/banners/rnl-hero-dark.png)
+
+![Round numbers for whatever you trade: the step auto-scales to FX, gold, and indices](screenshots/RoundNumberLevels/banners/rnl-mechanics-dark.png)
+
 ## Case study: Trend Breakout EA
 
 A worked example of how I build and test a strategy, not a product. A trend-filtered
