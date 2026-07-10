@@ -225,6 +225,21 @@ Market:
 
 ![Round numbers for whatever you trade: the step auto-scales to FX, gold, and indices](screenshots/RoundNumberLevels/banners/rnl-mechanics-dark.png)
 
+## Free tool: One Click Close and Breakeven Panel
+
+A one-click exit cockpit for MetaTrader 5. When you need to act right now you can close everything,
+take only your winners, cut only your losers, flatten one direction, move every open trade to
+break-even, or clear your pending orders, each from a single button on a clean draggable panel. A
+confirm step guards the destructive actions, and colour-coded feedback tells you exactly what each
+click did. It works account-wide or on the current symbol only, on both netting and hedging
+accounts. It opens no trades and fires no signals: it acts only on the positions you already hold,
+and only when you click. Free on the MQL5 Market:
+[One Click Close and Breakeven Panel](https://www.mql5.com/en/market/product/185051).
+
+![One-click exit panel: close all, only winners or losers, one direction, break-even all, and delete pendings](screenshots/OneClickClose/banners/occ-hero-dark.png)
+
+![Three tools on one panel: close, break-even, and clear pending orders](screenshots/OneClickClose/banners/occ-mechanics-dark.png)
+
 ## Case study: Trend Breakout EA
 
 A worked example of how I build and test a strategy, not a product. A trend-filtered
