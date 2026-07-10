@@ -73,6 +73,20 @@ trade or predict. On the MQL5 Market:
 
 ![The full panel: the 8-major strength grid across four timeframes plus the ranked opportunity table](screenshots/CurrencyStrengthPro/banners/csp-panel-dark.png)
 
+## Paid tool: Prop Firm Auto Close and Drawdown Lockout
+
+Automatically enforce your prop-firm risk limits. The Prop Firm Enforcer watches your daily-loss and
+overall drawdown limits, and when a limit is about to be hit it closes every position, cancels your
+pending orders, and locks out new trades. It is built to stop one bad run before it breaches your limit
+and fails your challenge. You set the limits and it does the discipline for you, at a buffer before the
+line, on both static and trailing rules, account-wide. It fires no signals and opens no trades of its
+own. On the MQL5 Market:
+[Prop Firm Auto Close and Drawdown Lockout](https://www.mql5.com/en/market/product/185183).
+
+![The enforcer panel: daily-loss and drawdown rails as live progress bars with a SAFE, CAUTION, DANGER, or LOCKED status](screenshots/PropFirmEnforcer/banners/enf-hero-dark.png)
+
+![Watch, enforce, lock out: how it protects a prop account before a breach](screenshots/PropFirmEnforcer/banners/enf-mechanics-dark.png)
+
 ## Free tool: Visual Risk and Position Size Calculator
 
 A clean, free position-size calculator for MetaTrader 5. Drop it on any chart and
