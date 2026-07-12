@@ -254,6 +254,21 @@ and only when you click. Free on the MQL5 Market:
 
 ![Three tools on one panel: close, break-even, and clear pending orders](screenshots/OneClickClose/banners/occ-mechanics-dark.png)
 
+## Free tool: Basket Close Manager
+
+A basket exit for MetaTrader 5. If you run a grid, a hedge, or several trades toward one idea, you
+care about the whole basket, not each ticket. Attach it to a chart, set a total target, and it
+closes every open trade at once the moment their combined result reaches your number. Target it in
+account cash or a percent of balance or equity, add an optional loss limit as a basket stop, and
+scope it by symbol, magic number, or direction. A warm-up guard means a startup glitch can never
+trigger a close. It opens no trades and fires no signals: it only closes positions you already hold.
+Free on the MQL5 Market:
+[Basket Close Manager](https://www.mql5.com/en/market/product/185323).
+
+![Your whole basket, one target: it closes every open trade when their combined result reaches your number](screenshots/BasketCloseManager/banners/bcm-hero-dark.png)
+
+![Watch the combined total, set your target in cash or percent of balance or equity, then it closes the basket as one](screenshots/BasketCloseManager/banners/bcm-mechanics-dark.png)
+
 ## Case study: Trend Breakout EA
 
 A worked example of how I build and test a strategy, not a product. A trend-filtered
