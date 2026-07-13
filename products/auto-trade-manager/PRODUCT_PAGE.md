@@ -20,6 +20,21 @@ independent, point-based rules:
 Each rule is toggled independently, so you can run just break-even, just trailing, just a
 partial, or all three together.
 
+## Trigger units, your choice
+
+Read every threshold above in whichever unit fits how you trade. One setting switches the
+unit for break-even, trailing and the partial together:
+
+- **Points** (default) — the classic fixed-distance behaviour. Existing setups are unchanged.
+- **ATR multiples** — the same setup adapts to each symbol's volatility (ATR period and
+  timeframe are configurable).
+- **R multiples** — 1R is the trade's initial stop distance, so break-even and targets are
+  expressed in risk. For the truest R, attach the manager when the trade opens; it reads 1R
+  from the stop present when it first sees the position. If a position has no stop when first
+  seen, R cannot be established and the panel says so.
+- **Money** — in your account currency, so a trade moves to break-even after a set profit and
+  trails a set amount behind.
+
 ## Who and what it manages
 
 - **This chart's symbol, or every symbol.** One toggle. Leave it on one chart to manage
@@ -27,8 +42,8 @@ partial, or all three together.
 - **By magic number, or everything.** Set a magic to manage only one EA's trades, or leave
   it at 0 to manage every position on the account, including trades you placed by hand.
 
-Triggers are in **points**, so it works the moment you attach it to any symbol, no per-symbol
-tuning required.
+It works the moment you attach it to any symbol; with the default point triggers no per-symbol
+tuning is required, and ATR or R modes adapt automatically when you want them to.
 
 ## Built to be safe
 
@@ -72,6 +87,17 @@ tracked per position, and a netted add is still the same position).
 
 Free, and built to the same forge standard as the rest of the TickForgeFX toolset: honest,
 clean, no hype. If you find it useful, an honest review helps more than you know.
+
+## Changelog
+
+**v1.1**
+- New: trigger-unit modes. Read break-even, trailing and the partial in **points, ATR
+  multiples, R multiples, or money (account currency)** — one setting for all three.
+- Points stays the default, so existing setups behave exactly as before.
+- Panel now shows the active trigger unit, and flags when a unit cannot be read yet (for
+  example R mode on a position that has no stop).
+- No change to the safety model: stops still only ever tighten, the partial is still once per
+  position with durable memory, and the tool still never opens a trade.
 
 ## Support
 

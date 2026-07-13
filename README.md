@@ -148,16 +148,19 @@ you before you chase a move. No signals, no repaint. Free on the MQL5 Market:
 
 ## Free tool: Auto Breakeven Trailing Stop and Partial Close
 
-A clean, free position manager for MetaTrader 5. Attach it to a chart and it looks after the
+A free position manager for MetaTrader 5. Attach it to a chart and it looks after the
 trades you already have open: it moves them to break-even once they are in profit, trails the stop
-as they run, and takes a partial off at your target. Every rule is independent and set in points,
-so it works on any symbol the moment you attach it. It manages by symbol and by magic number, or
+as they run, and takes a partial off at your target. Every rule is independent, and as of v1.1 you
+can read each trigger in the unit that fits how you trade: points (the default), ATR multiples, R
+multiples, or money. It manages by symbol and by magic number, or
 everything on the account including trades you placed by hand, and a stop only ever moves to
 protect, never to loosen. The partial is taken once per position and remembered durably, so a
 reload, a recompile, or a terminal restart can never take a second partial off the same trade. It
 never opens a trade and fires no signal. It only manages what is already there. Free on the MQL5
 Market:
 [Auto Breakeven Trailing Stop and Partial Close](https://www.mql5.com/en/market/product/184556).
+
+![Trigger units in v1.1: break-even, trailing and partials in points, ATR, R, or money](screenshots/AutoTradeManager/banners/atm-triggers-dark.png)
 
 ![The manager panel with break-even, trailing stop, and partial close working on a dark chart](screenshots/AutoTradeManager/banners/atm-hero-dark.png)
 
@@ -268,6 +271,21 @@ Free on the MQL5 Market:
 ![Your whole basket, one target: it closes every open trade when their combined result reaches your number](screenshots/BasketCloseManager/banners/bcm-hero-dark.png)
 
 ![Watch the combined total, set your target in cash or percent of balance or equity, then it closes the basket as one](screenshots/BasketCloseManager/banners/bcm-mechanics-dark.png)
+
+## Free tool: Auto Close by Time and Weekend
+
+A free scheduled closer for MetaTrader 5. Attach it to a chart, set a time, and it flattens your
+open trades for you: at a set time each day, before the weekend gap, or once a trade has been open
+past a maximum holding time. Enable one, two, or all three. It runs on server time so the weekend
+close still fires on a quiet Friday, it waits out a spread spike so it never flattens you into a
+blowout, and it will not fire a stale close on a late startup or re-close your trades after a
+restart. It opens nothing and fires no signal: it only closes trades you already have open, on the
+schedule you set. Free on the MQL5 Market:
+[Auto Close by Time and Weekend](https://www.mql5.com/en/market/product/185602).
+
+![Set the time and it flattens your open trades: daily, before the weekend, or after a max holding time](screenshots/AutoCloseByTime/banners/act-hero-dark.png)
+
+![Three ways to be flat: a daily time close, a weekend close, and a max-holding-time close](screenshots/AutoCloseByTime/banners/act-mechanics-dark.png)
 
 ## Case study: Trend Breakout EA
 
