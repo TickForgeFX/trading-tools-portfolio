@@ -152,7 +152,9 @@ A free position manager for MetaTrader 5. Attach it to a chart and it looks afte
 trades you already have open: it moves them to break-even once they are in profit, trails the stop
 as they run, and takes a partial off at your target. Every rule is independent, and as of v1.1 you
 can read each trigger in the unit that fits how you trade: points (the default), ATR multiples, R
-multiples, or money. It manages by symbol and by magic number, or
+multiples, or money. As of v1.2 it can also alert you the moment it acts, when a trade moves to
+break-even, trailing starts, or a partial closes, by popup, push, email, or sound. It manages by
+symbol and by magic number, or
 everything on the account including trades you placed by hand, and a stop only ever moves to
 protect, never to loosen. The partial is taken once per position and remembered durably, so a
 reload, a recompile, or a terminal restart can never take a second partial off the same trade. It
@@ -160,11 +162,13 @@ never opens a trade and fires no signal. It only manages what is already there. 
 Market:
 [Auto Breakeven Trailing Stop and Partial Close](https://www.mql5.com/en/market/product/184556).
 
-![Trigger units in v1.1: break-even, trailing and partials in points, ATR, R, or money](screenshots/AutoTradeManager/banners/atm-triggers-dark.png)
+![Alerts the moment it acts: break-even, trailing, or a partial, by popup, push, email, or sound](screenshots/AutoTradeManager/banners/atm-alerts-dark.png)
 
 ![The manager panel with break-even, trailing stop, and partial close working on a dark chart](screenshots/AutoTradeManager/banners/atm-hero-dark.png)
 
 ![Three tools, one attach: break-even, trailing stop, and partial take-profit explained](screenshots/AutoTradeManager/banners/atm-mechanics-dark.png)
+
+![Trigger units in v1.1: break-even, trailing and partials in points, ATR, R, or money](screenshots/AutoTradeManager/banners/atm-triggers-dark.png)
 
 ## Free tool: Prop Firm Drawdown and Daily Loss Guard
 

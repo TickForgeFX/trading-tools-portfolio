@@ -35,6 +35,18 @@ unit for break-even, trailing and the partial together:
 - **Money** — in your account currency, so a trade moves to break-even after a set profit and
   trails a set amount behind.
 
+## Alerts when it acts
+
+The manager works silently, so this tells you the moment it does something. You can get an
+alert the instant a trade moves to break-even, the trailing stop starts, or a partial closes:
+
+- **Your channels.** Popup, sound, push notification to the MetaTrader mobile app, or email.
+  Each channel is toggled on or off independently.
+- **One alert per event, per trade.** Each event is announced once and never repeats, even
+  after a chart reload or a terminal restart, so you are not pinged on every tick.
+- **Per-event switches.** Get only the partial alert, or only break-even, if that is all you
+  want to hear about.
+
 ## Who and what it manages
 
 - **This chart's symbol, or every symbol.** One toggle. Leave it on one chart to manage
@@ -89,6 +101,14 @@ Free, and built to the same forge standard as the rest of the TickForgeFX toolse
 clean, no hype. If you find it useful, an honest review helps more than you know.
 
 ## Changelog
+
+**v1.2**
+- New: alerts when the manager acts. Get a popup, sound, push notification, or email the moment
+  a trade moves to **break-even**, the **trailing stop** starts, or a **partial** closes.
+- One alert per event, per trade, with durable memory, so nothing repeats after a chart reload
+  or a terminal restart. Each channel and each event has its own on/off switch.
+- No change to the management logic: stops still only ever tighten, the partial is still once
+  per position, and the tool still never opens a trade.
 
 **v1.1**
 - New: trigger-unit modes. Read break-even, trailing and the partial in **points, ATR
