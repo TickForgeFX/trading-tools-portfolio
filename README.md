@@ -291,6 +291,21 @@ schedule you set. Free on the MQL5 Market:
 
 ![Three ways to be flat: a daily time close, a weekend close, and a max-holding-time close](screenshots/AutoCloseByTime/banners/act-mechanics-dark.png)
 
+## Free tool: Pivot Points Classic Fibonacci Camarilla
+
+A free pivot-points indicator for MetaTrader 5. It computes the support and resistance levels a
+large part of the market watches each session, in three methods, Classic floor pivots, Fibonacci,
+and Camarilla, from the previous closed daily, weekly, or monthly candle. Each level is a labelled
+line, and a compact panel lists the central pivot, every resistance and support, and how far price
+sits from each in pips. Levels that sit far from price pin to the chart edge with an arrow so you
+always see the whole set, and because the source candle is closed they stay fixed for the session.
+No signals, no repaint. Free on the MQL5 Market:
+[Pivot Points Classic Fibonacci Camarilla](https://www.mql5.com/en/market/product/186251).
+
+![Classic, Fibonacci and Camarilla pivots drawn from the previous session, with the central pivot, resistance and support labelled](screenshots/PivotPoints/banners/pp-hero-dark.png)
+
+![The indicator on a live XAUUSD chart: the pivot on its line and the off-screen levels pinned to the chart edge](screenshots/PivotPoints/banners/pp-chart-dark.png)
+
 ## Case study: Trend Breakout EA
 
 A worked example of how I build and test a strategy, not a product. A trend-filtered
