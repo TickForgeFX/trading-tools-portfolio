@@ -87,6 +87,27 @@ own. On the MQL5 Market:
 
 ![Watch, enforce, lock out: how it protects a prop account before a breach](screenshots/PropFirmEnforcer/banners/enf-mechanics-dark.png)
 
+## Paid tool: Auto Breakeven Trailing Stop and Partial Close Pro
+
+You planned the trade, then the screen took over: you moved the stop too early, held the runner
+too long, or forgot the second partial entirely. This one executes the plan you already made, on
+every position you already have open. It is the Pro edition of the free Auto Breakeven tool below,
+with far more depth: a four level partial ladder, each level with its own trigger and its own
+percent of what remains; four trailing engines (a fixed distance, a volatility-adaptive ATR, a
+chandelier hung off the highest high since entry, or simply behind the last closed candles); per
+symbol profiles that load automatically, so gold keeps its wide trail while EURUSD keeps its tight
+one; and an optional pause during your quiet hours or around calendar news. Every threshold reads
+in points, ATR multiples, R multiples or account currency. Every ladder level fires at most once
+per position, and that memory survives a full terminal restart. Closed bars only, and the stop is
+never loosened in any mode. It opens nothing and predicts nothing. On the MQL5 Market:
+[Auto Breakeven Trailing Stop and Partial Close Pro](https://www.mql5.com/en/market/product/186844).
+
+![Scale out in four steps: a four level partial ladder, each level with its own trigger and percent](screenshots/AutoTradeManagerPro/banners/atmpro-hero-dark.png)
+
+![Not a mockup: the panel on a live EURUSD chart, managing a real position](screenshots/AutoTradeManagerPro/banners/atmpro-chart-dark.png)
+
+![Four trailing engines: classic, ATR, chandelier and candle, all on closed bars](screenshots/AutoTradeManagerPro/banners/atmpro-mechanics-dark.png)
+
 ## Free tool: Visual Risk and Position Size Calculator
 
 A clean, free position-size calculator for MetaTrader 5. Drop it on any chart and
