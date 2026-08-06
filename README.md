@@ -44,21 +44,6 @@ the MQL5 Market:
 
 ![Reads clean on any chart: the same toolkit on a light background, labels and zones still legible](screenshots/SMC/banners/smc-adaptive-light.png)
 
-## Paid tool: Trade Manager One Click Risk and Partials
-
-The honest trade cockpit for MetaTrader 5. You decide when to trade; it handles the risk
-sizing, the one-click execution, the full management, and the daily protection. Drag a stop
-line and read the exact lot size for the percent of your account you choose to risk, then open
-with one click: the trade goes on with your stop and target attached. From there it runs auto
-break-even, a trailing stop, and up to three partial take-profits, all set in R, and it locks
-out new entries for the rest of the day when your daily loss limit is hit. Stops only ever move
-to protect, never to loosen. It fires no signals and makes no predictions. On the MQL5 Market:
-[Trade Manager One Click Risk and Partials](https://www.mql5.com/en/market/product/184764).
-
-![The cockpit panel: setup direction, risk-based lot, stop distance and reward-to-risk, with one-click Buy and Sell](screenshots/TradeManager/banners/tm-hero-dark.png)
-
-![One panel, the whole trade: size the position, open in one click, then it auto-manages break-even, trailing, and partials](screenshots/TradeManager/banners/tm-mechanics-dark.png)
-
 ## Paid tool: Currency Strength Scanner Pro
 
 A currency strength meter that does the next step for you. It ranks the 8 majors by their
@@ -73,40 +58,31 @@ trade or predict. On the MQL5 Market:
 
 ![The full panel: the 8-major strength grid across four timeframes plus the ranked opportunity table](screenshots/CurrencyStrengthPro/banners/csp-panel-dark.png)
 
-## Paid tool: Prop Firm Auto Close and Drawdown Lockout
+## Paid tool: Trade Manager with Risk Sizing and Trailing Stops
 
-Automatically enforce your prop-firm risk limits. The Prop Firm Enforcer watches your daily-loss and
-overall drawdown limits, and when a limit is about to be hit it closes every position, cancels your
-pending orders, and locks out new trades. It is built to stop one bad run before it breaches your limit
-and fails your challenge. You set the limits and it does the discipline for you, at a buffer before the
-line, on both static and trailing rules, account-wide. It fires no signals and opens no trades of its
-own. On the MQL5 Market:
-[Prop Firm Auto Close and Drawdown Lockout](https://www.mql5.com/en/market/product/185183).
+Three lines on your chart: entry, stop and target. Drag the stop to where the trade is actually
+wrong and the lot size follows it, so the risk stays exactly the percent you set no matter how
+wide or tight you place it. One click sends the order at that size, as a market order or as the
+right pending order depending on where you put the entry line. After that it runs the trade: two
+partial closes, break-even with a buffer, and a trailing stop in four modes (fixed distance, ATR,
+chandelier below the high since entry, or behind the last closed candles). A daily and an overall
+loss limit sit underneath, and on a breach they cancel working orders, close what the tool opened
+and refuse new entries until the day rolls. It never decides to trade; there are no signals and no
+strategy in it. The parts worth knowing are the ones nobody advertises: it refuses to size a
+degenerate plan rather than handing back a confident number, a button that cannot fire says why in
+plain words, and the sizing reads the loss tick value for the stop leg and the profit one for the
+target, which differ on many CFDs and crosses. On the MQL5 Market:
+[Trade Manager with Risk Sizing and Trailing Stops](https://www.mql5.com/en/market/product/189281).
 
-![The enforcer panel: daily-loss and drawdown rails as live progress bars with a SAFE, CAUTION, DANGER, or LOCKED status](screenshots/PropFirmEnforcer/banners/enf-hero-dark.png)
+[Watch the 84 second demo](https://www.youtube.com/watch?v=M_lc3k1AJak), recorded on a live chart.
 
-![Watch, enforce, lock out: how it protects a prop account before a breach](screenshots/PropFirmEnforcer/banners/enf-mechanics-dark.png)
+![Drag the stop and the lot size follows, so the risk stays exactly what you set](screenshots/TradeManagerRS/banners/tmrs-hero-dark.png)
 
-## Paid tool: Auto Breakeven Trailing Stop and Partial Close Pro
+![Not a mockup: the panel managing a real short on gold, unedited](screenshots/TradeManagerRS/banners/tmrs-chart-dark.png)
 
-You planned the trade, then the screen took over: you moved the stop too early, held the runner
-too long, or forgot the second partial entirely. This one executes the plan you already made, on
-every position you already have open. It is the Pro edition of the free Auto Breakeven tool below,
-with far more depth: a four level partial ladder, each level with its own trigger and its own
-percent of what remains; four trailing engines (a fixed distance, a volatility-adaptive ATR, a
-chandelier hung off the highest high since entry, or simply behind the last closed candles); per
-symbol profiles that load automatically, so gold keeps its wide trail while EURUSD keeps its tight
-one; and an optional pause during your quiet hours or around calendar news. Every threshold reads
-in points, ATR multiples, R multiples or account currency. Every ladder level fires at most once
-per position, and that memory survives a full terminal restart. Closed bars only, and the stop is
-never loosened in any mode. It opens nothing and predicts nothing. On the MQL5 Market:
-[Auto Breakeven Trailing Stop and Partial Close Pro](https://www.mql5.com/en/market/product/186844).
+![What happens after the fill: partial, break-even, second partial, trailing stop](screenshots/TradeManagerRS/banners/tmrs-manage-dark.png)
 
-![Scale out in four steps: a four level partial ladder, each level with its own trigger and percent](screenshots/AutoTradeManagerPro/banners/atmpro-hero-dark.png)
-
-![Not a mockup: the panel on a live EURUSD chart, managing a real position](screenshots/AutoTradeManagerPro/banners/atmpro-chart-dark.png)
-
-![Four trailing engines: classic, ATR, chandelier and candle, all on closed bars](screenshots/AutoTradeManagerPro/banners/atmpro-mechanics-dark.png)
+![It refuses to size a bad plan instead of printing a number you cannot trust](screenshots/TradeManagerRS/banners/tmrs-guard-dark.png)
 
 ## Free tool: Visual Risk and Position Size Calculator
 
