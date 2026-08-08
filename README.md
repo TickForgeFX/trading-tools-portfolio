@@ -34,7 +34,10 @@ structure (BOS / CHoCH), order blocks, fair value gaps, liquidity (BSL / SSL,
 equal highs and lows, previous day levels), premium and discount with an OTE
 band, killzone sessions, and a multi-timeframe dashboard. The panel reads the
 current bias, zone, session, nearest liquidity, and the named key price levels
-at a glance. Detection runs on closed bars only and never repaints. Now live on
+at a glance, with the distance to price in pips on the levels that are a single
+price. The killzone sessions find your broker's clock on their own and follow
+daylight saving, so they land on the right hours the moment you attach.
+Detection runs on closed bars only and never repaints. Now live on
 the MQL5 Market:
 [SMC and ICT Structure Liquidity Dashboard](https://www.mql5.com/en/market/product/182687).
 
@@ -302,6 +305,32 @@ No signals, no repaint. Free on the MQL5 Market:
 ![Classic, Fibonacci and Camarilla pivots drawn from the previous session, with the central pivot, resistance and support labelled](screenshots/PivotPoints/banners/pp-hero-dark.png)
 
 ![The indicator on a live XAUUSD chart: the pivot on its line and the off-screen levels pinned to the chart edge](screenshots/PivotPoints/banners/pp-chart-dark.png)
+
+## Free tool: Prop Firm Challenge Objectives Tracker
+
+A funded-account challenge is decided by three numbers and your terminal shows you none of
+them. This panel tracks all three on your chart: how much of the profit target you have
+made, how many trading days you have banked, and how much of your total profit came from
+your single best day. That last one is the consistency rule, and it costs more traders
+their payout than drawdown does. It reads your account and your own closed deal history,
+it never places, modifies or closes an order, and it deliberately draws no loss or
+drawdown rails at all, because staying inside the rules is a different question from being
+on course to pass. The parts worth knowing are the ones that decide whether you can trust
+a number: the account size is derived from your own deal history rather than assumed, and
+a funding deal only starts a new cycle when it is large enough to actually be one, so a
+small rebate cannot silently wipe out weeks of progress. Where the history genuinely
+cannot answer, it says so instead of printing a confident figure. The consistency reading
+stays undefined until enough days exist for the cap to be reachable at all, because with
+two winning days the better of them is never under half. On the MQL5 Market:
+[Prop Firm Challenge Objectives Tracker](https://www.mql5.com/en/market/product/189565).
+
+![Three objectives on one panel: profit target, trading days, and the consistency rule](screenshots/PropFirmChallengeTracker/banners/cht-hero-dark.png)
+
+![The consistency rule, the one that quietly costs traders their payout](screenshots/PropFirmChallengeTracker/banners/cht-consistency-dark.png)
+
+![When the history cannot answer, it says so rather than printing a number you cannot trust](screenshots/PropFirmChallengeTracker/banners/cht-honest-dark.png)
+
+![The panel on a live chart, tracking a challenge in progress](screenshots/PropFirmChallengeTracker/banners/cht-chart-dark.png)
 
 ## Case study: Trend Breakout EA
 
