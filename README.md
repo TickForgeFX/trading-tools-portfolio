@@ -175,10 +175,15 @@ Market:
 A clean, free risk panel for MetaTrader 5. It watches the two rails that end most prop-firm
 accounts, the daily loss limit and the overall (max) loss limit, and shows you exactly how close
 you are, live, with a progress bar for each and the cash room left before you breach. The daily
-limit is measured on current equity from your start-of-day balance, so open floating losses count
-the way most firms actually breach, and the overall limit can be static (a fixed floor, the FTMO
-style) or trailing from your peak. It carries a SAFE, CAUTION, or DANGER status and alerts you at a
-warning level and again on a breach. The day's baseline and your peak are stored durably, so a
+limit is measured on current equity, so open floating losses count the way most firms actually
+breach, and you choose what it measures from: the start-of-day balance, equity, whichever is
+higher, or the day's highest equity so far, for firms that count the day's loss from your best
+point rather than from the open. The overall limit can be static (a fixed floor, the FTMO style) or
+trailing from your peak. It carries a SAFE, CAUTION, or DANGER status and alerts you at a warning
+level and again on a breach. The figure all of those percentages are measured against, your account
+size, is worked out from your own deal history rather than from whatever the balance happened to be
+the day you installed it, and where the history cannot reach that far back the panel says so
+instead of drawing rails off a guess. The day's baseline and your peak are stored durably, so a
 restart never resets your day or hides a real drawdown. It never trades and fires no signals. Free
 on the MQL5 Market:
 [Prop Firm Drawdown and Daily Loss Guard](https://www.mql5.com/en/market/product/184431).

@@ -20,14 +20,20 @@ Attach it to any chart and a forge panel shows, live:
 
 Firms measure the rails differently, so it is configurable to match yours:
 
-- **Daily limit** as a percent of your account size (default 5%), measured from the
-  **start-of-day balance** on **current equity**, so open floating losses count, the way most
-  firms breach.
+- **Daily limit** as a percent of your account size (default 5%), measured on **current
+  equity**, so open floating losses count, the way most firms breach. You choose what it
+  measures from: the **start-of-day balance**, equity, whichever is higher, or **the day's
+  highest equity so far**, for firms that count the day's loss from your best point rather
+  than from the open.
 - **Daily reset hour** you set to your firm's server timezone.
 - **Overall limit** (default 10%) as either **Static** (a fixed floor below your starting
   balance, the FTMO style) or **Trailing** (measured from your peak equity, for trailing-drawdown
   accounts).
-- **Initial account size** auto-detected, or set it exactly (e.g. 100000 for a 100k challenge).
+- **Initial account size** worked out from your own deal history, so it is the balance your
+  challenge actually started at rather than whatever it happened to be the day you installed
+  this. Every limit here is a percentage of that number, so when your history does not reach
+  far enough back to be sure, it says so plainly instead of guessing. You can always set the
+  figure exactly (e.g. 100000 for a 100k challenge).
 
 The day's baseline and your peak are stored durably, so closing the chart, recompiling, or
 restarting the terminal does not reset your day or hide a real drawdown.
@@ -46,9 +52,9 @@ forbid trade-closing bots anyway.)
 
 ## Recommended use
 
-Attach it once on any chart, set your firm's limits, reset hour, and (for accuracy) your exact
-account size. Works on any symbol and timeframe. For the truest daily baseline, have it running
-at the start of your trading day.
+Attach it once on any chart and set your firm's limits and reset hour. The account size comes
+from your deal history, so there is usually nothing to enter. Works on any symbol and timeframe.
+For the truest daily baseline, have it running at the start of your trading day.
 
 ## Notes
 
