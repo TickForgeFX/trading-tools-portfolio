@@ -63,16 +63,18 @@ trade or predict. On the MQL5 Market:
 
 ## Paid tool: Trade Manager with Risk Sizing and Trailing Stops
 
-Three lines on your chart: entry, stop and target. Drag the stop to where the trade is actually
-wrong and the lot size follows it, so the risk stays exactly the percent you set no matter how
-wide or tight you place it. One click sends the order at that size, as a market order or as the
-right pending order depending on where you put the entry line. After that it runs the trade: two
+You said one percent a trade. Your last ten say otherwise, because the stop moves and the lot
+size does not follow it. Put entry, stop and target on the chart as three draggable lines: drag
+the stop to where the trade is actually wrong and the size follows it, so one percent is one
+percent whether that stop sits ten points away or two hundred. One click then sends it at exactly
+that size, as a market order or as the right pending order depending on where you put the entry
+line. After that it runs the trade: two
 partial closes, break-even with a buffer, and a trailing stop in four modes (fixed distance, ATR,
 chandelier below the high since entry, or behind the last closed candles). A daily and an overall
 loss limit sit underneath, and on a breach they cancel working orders, close what the tool opened
 and refuse new entries until the day rolls. It never decides to trade; there are no signals and no
 strategy in it. The parts worth knowing are the ones nobody advertises: it refuses to size a
-degenerate plan rather than handing back a confident number, a button that cannot fire says why in
+degenerate plan rather than handing back a confident number, a button that cannot fire gives thirteen distinct reasons in
 plain words, and the sizing reads the loss tick value for the stop leg and the profit one for the
 target, which differ on many CFDs and crosses. On the MQL5 Market:
 [Trade Manager with Risk Sizing and Trailing Stops](https://www.mql5.com/en/market/product/189281).

@@ -2,11 +2,13 @@
 
 **MetaTrader 5 Expert Advisor / Utilities / Risk management / paid**
 
-Three lines on your chart: entry, stop and target. Drag the stop to where the trade is
-actually wrong, and the lot size follows it, so the risk stays exactly the percent you set
-no matter how wide or tight you place it. One click sends the order at that size. After
-that it runs the trade for you: partial closes, break-even, a trailing stop, and a daily
-limit that stops you entering when the day has gone badly enough.
+You said one percent a trade. Your last ten say otherwise, because the stop moves and the
+lot size does not follow it. Put entry, stop and target on the chart as three draggable
+lines. Drag the stop to where the trade is actually wrong and the size follows it, so one
+percent is one percent whether that stop sits ten points away or two hundred. One click then
+sends it at exactly that size. After that it runs the trade for you: partial closes,
+break-even, a trailing stop, and a daily limit that stops you entering when the day has gone
+badly enough.
 
 **It never decides to trade. You do.** There are no signals, no entry rules and no strategy
 anywhere in it. You choose the direction and the levels; this places that trade at the
