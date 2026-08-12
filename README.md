@@ -86,9 +86,9 @@ flags when your account is too small for your chosen risk. No signals, no repain
 the number you need before you place the trade. Free on the MQL5 Market:
 [Visual Risk and Position Size Calculator](https://www.mql5.com/en/market/product/183000).
 
-![The panel: direction, lot size, money at risk, stop distance, and reward-to-risk read off three dragged lines](screenshots/RiskCalculator/thumbnails/rc-panel-thumb.png)
+![The panel: direction, lot size, money at risk, stop distance, and reward-to-risk read off three dragged lines](screenshots/RiskCalculator/banners/rc-hero-dark.png)
 
-![The calculator on a EURUSD chart with Entry, Stop, and Target lines in place](screenshots/RiskCalculator/thumbnails/rc-eurusd-thumb.png)
+![The calculator on a live gold chart with Entry, Stop, and Target lines in place](screenshots/RiskCalculator/banners/rc-chart-dark.png)
 
 ## Free tool: ICT Killzone and Session Tracker
 
