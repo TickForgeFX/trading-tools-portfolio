@@ -1,4 +1,4 @@
-# One-Click Close and Breakeven Panel
+# One Click Close and Breakeven Panel
 
 **Close or protect every open trade with one click.**
 
