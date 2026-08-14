@@ -167,8 +167,7 @@ Two things do not work in the tester and neither one is a setting of this tool. 
 cannot be dragged. And alerts cannot be delivered at all, so no popup, sound, push or email
 will fire there. What the tester does still show you is that they fired: every event names
 itself in the panel footer, marks the chart at the price it happened, and is written to the
-log. On a live chart all four delivery channels behave normally, and the gallery video shows
-the panel being driven on one.
+log. On a live chart all four delivery channels behave normally.
 
 ---
 
