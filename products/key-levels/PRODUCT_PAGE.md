@@ -13,8 +13,8 @@ repaint, no clutter.
 - **Previous month** high and low (optional).
 
 Each level is a clean labelled line, colour-coded by period, and a compact panel lists every
-level, its price, and its distance from current price in pips, so you can see at a glance which
-level is in play.
+level, its price, and how far price sits from it. That distance can read in pips, in
+price, or as a percentage, whichever you prefer.
 
 ## Straight from your broker's candles
 
