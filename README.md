@@ -289,13 +289,19 @@ schedule you set. Free on the MQL5 Market:
 A free pivot-points indicator for MetaTrader 5. It computes the support and resistance levels a
 large part of the market watches each session, in three methods, Classic floor pivots, Fibonacci,
 and Camarilla, from the previous closed daily, weekly, or monthly candle. Each level is a labelled
-line, and a compact panel lists the central pivot, every resistance and support, and how far price
-sits from each in pips. Levels that sit far from price pin to the chart edge with an arrow so you
-always see the whole set, and because the source candle is closed they stay fixed for the session.
-No signals, no repaint. Free on the MQL5 Market:
+line, and a compact panel lists them grouped under Resistance, Pivot and Support, in that order,
+with the outermost level of each group first, and each level's distance from price shown in pips,
+in price, or as a percentage. An optional alert tells you when price reaches
+a level, on popup, sound, push or email. Levels that sit far from price pin to the chart edge with
+an arrow so you always see the whole set, and because the source candle is closed they stay fixed
+for the session. No signals, no repaint. Free on the MQL5 Market:
 [Pivot Points Classic Fibonacci Camarilla](https://www.mql5.com/en/market/product/186251).
 
 ![Classic, Fibonacci and Camarilla pivots drawn from the previous session, with the central pivot, resistance and support labelled](screenshots/PivotPoints/banners/pp-hero-dark.png)
+
+![Three calculation methods: Classic floor pivots, Fibonacci projections, and the close-based Camarilla levels](screenshots/PivotPoints/banners/pp-mechanics-dark.png)
+
+![It marks the levels, you make the call: computed from the previous closed candle, fixed for the whole period, no repaint](screenshots/PivotPoints/banners/pp-positioning-dark.png)
 
 ![The indicator on a live XAUUSD chart: the pivot on its line and the off-screen levels pinned to the chart edge](screenshots/PivotPoints/banners/pp-chart-dark.png)
 

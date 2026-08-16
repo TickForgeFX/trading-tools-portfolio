@@ -13,9 +13,19 @@ Drop it on any chart and it builds the pivot levels for the period you choose:
   and R4/S4 breakout levels).
 - **Daily, weekly or monthly** period, whichever session you trade.
 
-Each level is a labelled line showing its price, and a compact forge panel lists the central
-pivot, every resistance and support, and how far price sits from each in pips. The central
-pivot is highlighted so the line in the middle is never in doubt.
+Each level is a labelled line showing its price, and a compact forge panel lists them grouped
+under Resistance, Pivot and Support, ordered high to low so the panel reads top to bottom the
+same way the chart does. Every row shows the level's price and how far price sits from it.
+Choose whether that distance reads in pips, in price, or as a percentage; percent is the one
+that means the same thing on every instrument.
+
+## An alert when price gets there
+
+Optional, and off until you switch it on. Choose any mix of a popup, a sound, a push
+notification to your phone, and an email. It fires once per level per day, it will not
+announce a level price had already passed when you attached the indicator, and it stays quiet
+when the period rolls over and every pivot recalculates at once. It tells you price reached a
+level you chose. It is not a suggestion to trade it.
 
 ## Why it exists
 
@@ -31,8 +41,8 @@ the whole period. No repaint.
 
 ## What it does not do
 
-It does not place trades, fire buy or sell signals, or predict direction. It marks the levels
-and measures distance. The call stays yours.
+It does not place trades, fire buy or sell signals, or predict direction. It marks the levels,
+measures distance, and can tell you when price arrives. The call stays yours.
 
 ## Recommended use
 
