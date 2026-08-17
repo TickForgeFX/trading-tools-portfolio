@@ -16,8 +16,8 @@ correct size and then manages it exactly the way you configured.
 
 ## Plan it on the chart
 
-- Drag Entry, Stop and Target. Grab them anywhere along the line, not at one hidden weld
-  point.
+- Drag the Stop anywhere along the line, not at one hidden weld point. Entry and Target
+  follow price for you out of the box, and can be dragged too once you switch that off.
 - Lot size, money at risk, stop distance and reward-to-risk recompute as you drag.
 - Risk as a percent of balance or of equity. Set a fixed account size and the percent is
   measured against that instead of your live balance, so a good week does not quietly grow
@@ -47,8 +47,12 @@ correct size and then manages it exactly the way you configured.
 
 Out of the box it manages every position on the chart's symbol, however it got there.
 Opened from this panel, opened by hand with F9, opened from the phone app on the train,
-opened by another EA. **A trade that arrived with no stop at all is given one**, at the
-distance you chose, without you touching the terminal. If you would rather it stayed out of
+opened by another EA. Switch on **"Protect a trade that has no stop"** and a trade that
+arrived without one is given a stop at your planned distance, measured from that trade's own
+open price, or told plainly why it declined. That switch is **off until you turn it on**,
+because Manage covers every trade on the symbol and another EA may be running without stops
+on purpose. It protects a position once; if something later removes that stop it says so
+rather than fighting for it. If you would rather it stayed out of
 everything it did not open, one dropdown says so.
 
 It will not take a partial for ground covered before it was watching, either. Attach it to a
@@ -82,10 +86,12 @@ nothing to close.
 | Partial close | Takes part of the position off at your first target |
 | Break-even | Stop to entry plus a buffer, so it locks a little rather than sitting on your fill |
 | Second partial | A percent of what is left, not of the original size |
+| Third partial | The same again on what remains after the second. Ships switched off |
 | Trailing stop | Fixed distance, ATR, Chandelier below the high since entry, or behind the last N closed candles. The fixed distance follows price; the other three place the stop from market structure |
 
 Triggers read in whichever unit suits you: points, ATR multiples, R multiples, or your
-account currency. Everything reads closed bars, so nothing repaints, and the stop only ever
+account currency. Every indicator reading comes from closed bars, so nothing it draws
+repaints, and the stop only ever
 moves toward you. It is never widened, in any mode.
 
 ## And it stops you when the day is done
@@ -94,7 +100,9 @@ moves toward you. It is never widened, in any mode.
 
 Set a daily limit and an overall limit as a percent of your account. The panel shows the
 headroom you have left before either one bites. On a breach it cancels its working orders,
-closes what it opened and refuses new entries until the day rolls. It is a limit that acts,
+closes what it opened and refuses new entries. The daily rail releases when the day rolls;
+the overall rail releases when equity recovers above the account size it recorded, or when
+you clear it yourself. It is a limit that acts,
 not a progress bar that watches.
 
 ## What it refuses to do
@@ -106,7 +114,7 @@ not a progress bar that watches.
   tight to size. That is the single most expensive mistake a sizing tool can make, and it is
   one click from being an order.
 - **A button that cannot fire tells you why.** Market closed, trading disabled, daily limit
-  reached, not enough free margin, stop too close to the current price. Nineteen distinct
+  reached, not enough free margin, stop too close to the current price. Eighteen distinct
   reasons, in plain words, instead of a control that silently does nothing.
 - **The sizing arithmetic is right on instruments where it usually is not.** A stop is a loss
   and a target is a gain, and on many CFDs and crosses your broker values those two
@@ -123,7 +131,9 @@ not a progress bar that watches.
 A panel you leave on the chart all day should cost you almost nothing. This one is built so
 it does.
 
-- **The panel redraws at most twice a second**, not on every tick. The expensive work sits
+- **The expensive redraw sits behind a throttle** rather than on every tick. A zoom or a
+  scroll beats it deliberately, because a card showing the wrong thing is worse than one
+  drawn twice. The expensive work sits
   behind a deliberate throttle.
 - **It puts nothing in your Objects list.** Open the object window on a chart running this
   and it is empty. The whole interface is drawn as hidden objects, so it never clutters the
