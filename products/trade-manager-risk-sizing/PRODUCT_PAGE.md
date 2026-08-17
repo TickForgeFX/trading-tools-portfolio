@@ -139,7 +139,8 @@ it does.
   and it is empty. The whole interface is drawn as hidden objects, so it never clutters the
   list you keep your own lines and zones in, and you cannot select or delete half the panel
   by accident while you are working.
-- **Every reading comes from closed bars**, so nothing it shows you can change after the fact.
+- **Every indicator reading comes from closed bars**, so nothing it draws can change after the
+  fact. The live figures, your size and your open profit, follow price.
 
 ## Good to know
 
@@ -160,10 +161,12 @@ it does.
   Partial 2 left. Below those sizes the level is retired quietly instead
   of being retried forever, because your broker will not accept an order smaller than its
   minimum.
-- **On a trade that reached it with no stop at all, the three structural trailing modes can
-  set the first stop below your entry price.** Break-even, the two extra ladder steps and the
-  fixed-distance trail never place below it. ATR, Chandelier and candle place where the
-  structure is, and sometimes the structure is behind your entry. That is a capped loss where
+- **On a trade that reached it with no stop at all, three of the four trailing modes can set the
+  first stop below your entry price.** Break-even, the two extra ladder steps and the
+  fixed-distance trail never place below it. Chandelier and the candle trail place where the
+  structure is, and sometimes the structure is behind your entry. ATR gets there a different way:
+  its distance behind price widens with volatility, so on a quiet entry into a volatile stretch
+  that distance can be larger than the profit so far. That is a capped loss where
   a moment ago there was none, so it is a reduction rather than a widening, but it is worth
   knowing before you point a structural mode at a trade you opened by hand.
 
