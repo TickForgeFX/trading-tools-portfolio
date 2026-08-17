@@ -87,7 +87,7 @@ nothing to close.
 | Break-even | Stop to entry plus a buffer, so it locks a little rather than sitting on your fill |
 | Second partial | A percent of what is left, not of the original size |
 | Third partial | The same again on what remains after the second. Ships switched off |
-| Trailing stop | Fixed distance, ATR, Chandelier below the high since entry, or behind the last N closed candles. The fixed distance follows price; the other three place the stop from market structure |
+| Trailing stop | Fixed distance, ATR, Chandelier below the high since entry, or behind the last N closed candles. The first two follow price, one at the distance you set and one at a distance that widens and tightens with volatility. Chandelier and the candle trail anchor to market structure instead |
 
 Triggers read in whichever unit suits you: points, ATR multiples, R multiples, or your
 account currency. Every indicator reading comes from closed bars, so nothing it draws
@@ -155,8 +155,9 @@ it does.
   never execute, and the card will keep saying "too close to move yet" for as long as it stays
   that way. If you see that permanently, the number to raise is the trigger.
 - **A partial needs a position big enough to split.** On a symbol whose smallest tradable size
-  is 0.01, Partial 1 needs 0.02 or more, and Partial 2 needs roughly 0.08, because it takes a
-  quarter of what Partial 1 left behind. Below those sizes the level is retired quietly instead
+  is 0.01, Partial 1 needs 0.02 or more, Partial 2 needs 0.07 because it takes a quarter of
+  what Partial 1 left behind, and Partial 3 needs 0.09 because it takes a quarter of what
+  Partial 2 left. Below those sizes the level is retired quietly instead
   of being retried forever, because your broker will not accept an order smaller than its
   minimum.
 - **On a trade that reached it with no stop at all, the three structural trailing modes can
@@ -168,14 +169,17 @@ it does.
 
 ## About the demo, stated plainly
 
-On the MQL5 Market a paid product's demo runs only in the Strategy Tester. The panel is
+On the MQL5 Market a paid product's demo runs only in the Strategy Tester. The buttons are
 fully usable there: pick your direction, place the trade from the panel, press the action
 buttons, and watch break-even, the partial closes and the trailing stop run on that position
 as the test advances.
 
-Two things do not work in the tester and neither one is a setting of this tool. The panel
-cannot be dragged. And alerts cannot be delivered at all, so no popup, sound, push or email
-will fire there. What the tester does still show you is that they fired: every event names
+Three things do not work in the tester and not one of them is a setting of this tool.
+MetaTrader never sends mouse events to an Expert Advisor in a test, so nothing on the chart
+can be dragged there: not the panel, and not the Entry, Stop and Target lines. Set your stop
+with the Points or ATR mode instead and the levels are placed from a rule rather than by hand.
+And alerts cannot be delivered at all, so no popup, sound, push or email will fire
+there. What the tester does still show you is that they fired: every event names
 itself in the panel footer, marks the chart at the price it happened, and is written to the
 log. On a live chart all four delivery channels behave normally.
 
