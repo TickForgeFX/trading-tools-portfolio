@@ -4,7 +4,7 @@
 
 Three lines on your chart: entry, stop and target. Drag the stop to where the trade is
 actually wrong, and the lot size follows it, so the risk stays exactly the percent you set
-no matter how wide or tight you place it. One click sends the order at that size. After
+no matter how wide or tight you place it. The Place button sends the order at that size. After
 that it runs the trade for you: partial closes, break-even, a trailing stop, and a daily
 limit that stops you entering when the day has gone badly enough.
 
@@ -31,7 +31,7 @@ correct size and then manages it exactly the way you configured.
   and it pins to the edge of the chart as a chip showing its name and price. Click it and the
   chart refits.
 
-## Enter it in one click
+## Enter it straight from the chart
 
 - Buy or sell at the planned size, with the stop and target taken straight from your lines.
 - Place the entry line away from price and it becomes the right pending order by itself, a
@@ -111,11 +111,11 @@ not a progress bar that watches.
 
 - **It refuses to size a bad plan.** Put the stop a hair from the entry and most panels hand
   back a confident 77 lot number. This one prints two dashes and tells you the stop is too
-  tight to size. That is the single most expensive mistake a sizing tool can make, and it is
+  tight to size. That is the single most expensive mistake a sizing tool can make, and on most panels it is
   one click from being an order.
 - **A button that cannot fire tells you why.** Market closed, trading disabled, daily limit
-  reached, not enough free margin, stop too close to the current price. Eighteen distinct
-  reasons, in plain words, instead of a control that silently does nothing.
+  reached, not enough free margin, stop too close to the current price. Every refusal is
+  named in plain words, instead of a control that silently does nothing.
 - **The sizing arithmetic is right on instruments where it usually is not.** A stop is a loss
   and a target is a gain, and on many CFDs and crosses your broker values those two
   differently. Sizing off the wrong one quietly risks more than you asked for. This reads the
@@ -149,7 +149,7 @@ it does.
   Set Manage to "Only trades this tool opened" and it goes back to touching nothing but its
   own, identified by its own magic number.
 - Partials, break-even, trailing, the target line, the alerts and the account limits can each
-  be switched off. With all of them off it is simply a risk-sized one-click entry panel.
+  be switched off. With all of them off it is simply a risk-sized entry panel.
 - Every stage fires at most once per position, and that memory survives a restart, a
   recompile and a change of ticket.
 - A break-even or trailing trigger smaller than your broker's own minimum stop distance can
