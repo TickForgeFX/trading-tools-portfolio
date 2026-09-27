@@ -1,67 +1,89 @@
 # SMC and ICT: Structure, Liquidity, Dashboard
 
-A clean, no-repaint Smart Money Concepts (SMC) and ICT toolkit for MetaTrader 5.
-Market structure (BOS and CHoCH), order blocks, fair value gaps, liquidity, premium
-and discount, ICT killzone sessions, and a multi-timeframe dashboard, so you can read
-the chart at a glance instead of marking it up by hand.
+![The whole structure, one clean read: the multi-timeframe dashboard beside the chart it reads](../../screenshots/SMC/banners/smc-hero-dark.png)
 
-Everything is detected on closed bars and never repaints.
+![The indicator on a real XAUUSD M15 chart: structure, zones, liquidity, premium and discount, sessions, the colour key and the dashboard](../../screenshots/SMC/banners/smc-xauusd-dark.png)
 
-## What it does
+The whole structure, one clean read. This Smart Money Concepts (SMC) and ICT indicator for
+MetaTrader 5 marks market structure with BOS and CHoCH, order blocks, fair value gaps,
+liquidity, premium and discount, and the trading sessions on your chart, then sums up the
+picture in one dashboard: your chart's own structure first, then M15, H1, H4 and D1. Detection
+runs on closed bars, so nothing repaints.
 
-- Market structure: confirmed swings with Break of Structure and Change of Character,
-  on a major swing layer plus an optional internal layer.
-- Order blocks: the last opposing candle before a structural break, drawn as a zone
-  and tracked until price mitigates it.
-- Fair value gaps: the three-candle imbalance, with a size filter for noise and
-  same-impulse merging so a cascade stays readable.
-- Liquidity: buy-side and sell-side levels with an unswept-only option, equal highs
-  and lows, and previous day high and low.
-- Premium and discount: the active dealing range split at equilibrium, with an
-  optional OTE band.
-- Killzone sessions: Sydney, Tokyo, London, and New York as time markers, aligned to
-  your broker automatically and adjusted for daylight saving.
-- Multi-timeframe dashboard: bias, nearest point of interest, and nearest liquidity
-  draw across M15, H1, H4, and D1, plus a plain-English line that sums up the picture.
-- Alerts: popup, push, and email on the events you choose, on closed-bar confirmation.
+## On your chart
 
-## What you see on the chart
+- **Market structure**: Break of Structure (BOS) and Change of Character (CHoCH) on confirmed
+  swings, with HH, HL, LH and LL labels. A second, internal layer for the smaller swings is one
+  switch away.
+- **Order blocks**: the last opposing candle before a break, drawn as a zone and followed until
+  price mitigates it. Mitigated blocks hide, fade or stay, as you choose.
+- **Fair value gaps**: the three-candle imbalance, with an optional minimum size. Gaps that overlap
+  within a few bars merge into one zone.
+- **Liquidity**: buy-side and sell-side levels at the swing highs and lows (unswept only, by
+  default), with equal highs and lows as an option.
+- **Premium and discount**: the current dealing range split at equilibrium, with an optional OTE
+  band.
+- **Sessions**: Tokyo, London and New York, with Sydney as an option, lined up with your broker's
+  server time automatically on a live chart and adjusted for daylight saving. Every hour is an
+  input, so you can narrow them to the ICT killzone windows you use.
 
-Green is bullish and buy-side, red is bearish and sell-side, gold flags an attention
-state (a change of character, a swept level, a mitigated zone), and grey is quiet
-context. Order blocks are a bordered zone, fair value gaps a clean outline, liquidity
-a dashed line, premium and discount a soft wash. The panel doubles as a live colour
-key, so you always know what you are looking at.
+## In the dashboard
 
-## Inputs and presets
+- **Your chart first**: its structure in large type, Bullish or Bearish from its last break, then
+  the zone price is in, the session, the nearest unswept liquidity and the nearest open fair value
+  gap.
+- **Then M15, H1, H4 and D1**: bias, nearest open fair value gap and nearest liquidity, one row
+  each.
+- **Key levels**: premium, equilibrium and discount, the OTE band, the nearest buy-side and
+  sell-side liquidity, and the previous day's high and low, most with their distance in pips
+  from the last closed bar.
 
-Every module turns on and off on its own, and every colour, swing strength, count, and
-session hour is an input. Three presets are included: Minimal for the cleanest view,
-Balanced out of the box, and Full for everything. An automatic light and dark theme
-reads your chart background and keeps the labels and zones readable either way.
+## What the colours mean
+
+Green is bullish and buy-side, red is bearish and sell-side, gold marks a change of character
+(and a mitigated zone, if you choose Fade), and grey is quiet context. Order blocks are a
+bordered zone, fair value gaps a clean outline, buy-side and sell-side liquidity a dashed line
+(equal highs and lows are solid), premium and discount a soft wash. The colour key card on the
+chart names each one.
 
 ## No repaint
 
-Detection runs on closed bars only. Nothing is drawn from the forming bar, and once an
-object prints it does not move or vanish. The only changes are deliberate and happen on
-a bar close: a level flips to swept, a zone to mitigated, or a zone extends its right
-edge. No-repaint is the first thing a serious trader checks, so it is stated plainly.
+Structure is detected on closed bars only, and no zone, level or label is drawn from the bar
+still forming. A bar close changes the chart only by fixed rules: a level is swept, a zone is
+mitigated, extends to the right or takes in an overlapping gap, an older zone makes way for a
+newer one, and the premium and discount bracket moves with the newest bars. At the far left edge
+of the scan (the most recent 1,500 bars by default), older structure is re-read as the window
+moves on.
 
-## What it does not do
+## Make it yours
 
-This is an analysis tool. It does not place trades, it does not fire buy or sell
-signals, and it does not predict direction. It marks structure clearly and
-consistently. The decisions stay yours.
+- Every module switches on and off on its own (order blocks need market structure on), and every
+  line and zone colour, swing strength, count and session hour is an input.
+- Labels and zones follow your chart's background, light or dark, automatically.
+- The colour key and the dashboard drag anywhere or lock in place, and keep their shape on
+  displays scaled to 125% or 150%. On a short chart the dashboard stands beside the key, when
+  there is room, instead of on top of it.
+- Alerts by popup, push notification or email for the events you pick: BOS, CHoCH, a new fair
+  value gap or price trading into one, an order block tapped, liquidity swept, price entering
+  premium or discount, or a session opening. Each fires once, when the bar closes.
+- Three presets, Minimal, Balanced and Full, are attached in the product's Comments on MQL5.
+  Balanced matches the defaults.
 
-## Recommended use
+## What it is not
 
-Works on any symbol and any timeframe. Many traders run it on M15 to H4 for intraday
-structure with the dashboard carrying the higher-timeframe context. The sessions find
-your broker's clock on their own, so there is nothing to set up first. These are
-recommendations only, nothing is locked to a symbol, timeframe, or account.
+An analysis tool, not a trading system. It does not open trades, draw entry arrows, or predict
+where price goes next. It lays the structure out the same way every time, and the
+decisions stay yours. Works on any symbol and any timeframe.
 
 ## Changelog
 
+- v1.5: both panels rebuilt as one house card. The colour key has four titled sections, its
+  premium and discount swatches are visible, and its liquidity swatches are dashed like the lines
+  they stand for. The dashboard opens with your chart's own structure in large type, then the
+  zone, the session, the nearest unswept liquidity and the nearest open fair value gap, then one
+  row per timeframe and the key levels; empty cells say what they mean. Both panels keep their
+  shape on displays scaled to 125% or 150%, the dashboard stands beside the key on a short chart,
+  and both follow the chart as soon as it is resized. Nothing about detection changed.
 - v1.4: sessions that place themselves, and distances on the key levels. The broker's
   GMT offset is now read from the terminal instead of typed in, so the session ribbons
   and the dashboard's session line land correctly on the first attach rather than two or
@@ -91,6 +113,11 @@ recommendations only, nothing is locked to a symbol, timeframe, or account.
 
 ## Support
 
-Reach me through the product Comments or MQL5 messaging. I answer honestly and quickly,
-and updates are tested against the previous version so they do not break what you rely
-on.
+Reach me through the product Comments or MQL5 messaging. Each update runs through its test
+suite before release.
+
+---
+
+Current version: **1.50**
+
+On the MQL5 Market: [SMC and ICT Structure Liquidity Dashboard](https://www.mql5.com/en/market/product/182687)

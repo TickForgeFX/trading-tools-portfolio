@@ -1,17 +1,14 @@
-# Candle Close Countdown Timer by TickForgeFX
+# Candle Close Countdown Timer
 
-A clean, free countdown for MT5. Attach it to any chart and it shows the exact time left on
-the current candle, a progress bar as the candle forms, and a live countdown for a whole set of
-higher timeframes at the same time. Simple, accurate, and out of your way.
+![Never miss a candle close: the time left on the current candle, a progress bar and a countdown for other timeframes](../../screenshots/CandleCloseCountdown/banners/ccc-hero-dark.png)
+
+A free countdown for MetaTrader 5. Attach it to any chart and it shows the exact time left on the current candle, a progress bar as the candle forms, and a live countdown for a whole set of higher timeframes at the same time. Accurate to the second, and out of your way.
 
 ## What it shows
 
-- **The exact time to the close.** A big, live countdown on the current chart timeframe,
-  ticking every second, with the last few seconds highlighted.
+- **The exact time to the close.** A big, live countdown on the current chart timeframe, ticking every second, with the last few seconds highlighted.
 - **A progress bar.** See at a glance how much of the current candle has already formed.
-- **Every timeframe at once.** A live countdown for M5, M15, M30, H1, H4 and D1 side by side,
-  so you can see the next close on any of them without switching charts. Choose which ones to
-  list.
+- **Every timeframe at once.** A live countdown for M5, M15, M30, H1, H4 and D1 side by side, so you can see the next close on any of them without switching charts. Choose which ones to list.
 
 ## Why it helps
 
@@ -21,20 +18,12 @@ higher timeframes at the same time. Simple, accurate, and out of your way.
 
 ## What it does not do
 
-It fires no signals, makes no predictions, and never trades. It is a clock, nothing more, and
-it does not repaint.
+It fires no signals, makes no predictions, and never trades. It is a clock, nothing more. No repaint.
 
-## The panel
+The panel is draggable, lockable, and always stays fully on-screen. Works on any symbol and any timeframe. Free to use.
 
-A compact forge panel, draggable from anywhere on it, lockable in place, and always clamped
-fully on-screen, the same standard as the rest of the TickForgeFX toolset.
+---
 
-## Notes
+Current version: **1.0**
 
-Free, and built to the same forge standard as the rest of the toolset: honest, clean, no hype.
-Works on any symbol and any timeframe. If you find it useful, an honest review helps more than
-you know.
-
-## Support
-
-Reach me through the Comments or MQL5 messaging. I answer honestly and quickly.
+On the MQL5 Market: [Candle Close Countdown Timer](https://www.mql5.com/en/market/product/184779)
