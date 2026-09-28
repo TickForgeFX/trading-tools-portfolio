@@ -24,6 +24,6 @@ The panel is draggable, lockable, and always stays fully on-screen. Works on any
 
 ---
 
-Current version: **1.0**
+Current version: **1.10**
 
 On the MQL5 Market: [Candle Close Countdown Timer](https://www.mql5.com/en/market/product/184779)

@@ -57,7 +57,7 @@ moves on.
 
 ## Make it yours
 
-- Every module switches on and off on its own (order blocks need market structure on), and every
+- Every module switches on and off on its own, and every
   line and zone colour, swing strength, count and session hour is an input.
 - Labels and zones follow your chart's background, light or dark, automatically.
 - The colour key and the dashboard drag anywhere or lock in place, and keep their shape on
@@ -77,6 +77,13 @@ decisions stay yours. Works on any symbol and any timeframe.
 
 ## Changelog
 
+- v1.6: three fixes. Order blocks now show with market structure switched off; switching structure off turns off
+  only the structure itself: the BOS / CHoCH breaks, the HH, HL, LH and LL labels, and the BOS / CHoCH alerts. The
+  previous day high and low lines on the chart now come from the daily candles, so they match the dashboard's PDH /
+  PDL row; before, they could be missing or show the wrong day, for example all Monday at a broker with no Sunday
+  candles, during the first candle of each day, and on a D1 chart. In the Strategy Tester the sessions now use the
+  manual GMT offset, set to your broker's offset from GMT: the tester's clock cannot show a broker's offset, so the
+  automatic one came out as 0 there. On a live chart the offset is still detected automatically.
 - v1.5: both panels rebuilt as one house card. The colour key has four titled sections, its
   premium and discount swatches are visible, and its liquidity swatches are dashed like the lines
   they stand for. The dashboard opens with your chart's own structure in large type, then the
@@ -118,6 +125,6 @@ suite before release.
 
 ---
 
-Current version: **1.50**
+Current version: **1.60**
 
 On the MQL5 Market: [SMC and ICT Structure Liquidity Dashboard](https://www.mql5.com/en/market/product/182687)

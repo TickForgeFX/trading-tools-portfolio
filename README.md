@@ -66,7 +66,7 @@ On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/184
 
 A free round-number indicator for MetaTrader 5. Attach it to any chart and it draws the psychological round-number price levels that traders watch, the major "00" figures as solid lines and the "50" half levels as dotted lines, each labelled with its price.
 
-![The levels price remembers: the 00 figures as solid lines and the 50 half levels dotted, drawn automatically](screenshots/RoundNumberLevels/banners/rnl-hero-dark.png)
+![The levels price remembers: the majors solid and the half levels dotted, drawn automatically](screenshots/RoundNumberLevels/banners/rnl-hero-dark.png)
 
 On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/184780). [Full description](products/round-number-levels/PRODUCT_PAGE.md).
 
