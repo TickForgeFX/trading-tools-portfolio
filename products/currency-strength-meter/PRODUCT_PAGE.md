@@ -6,7 +6,7 @@ A free currency strength meter for MetaTrader 5. It ranks the eight major curren
 
 ## What it shows
 
-- **The eight majors ranked** strongest to weakest, each with its strength value and a color-coded bar.
+- **The eight majors ranked** strongest to weakest, each with its strength value in green or red.
 - **Multi-timeframe alignment.** Four timeframe cells per currency (M15, H1, H4, D1 by default, all configurable). Green across all four means strong on every horizon, the high-conviction read.
 - **Momentum direction.** An arrow on each currency showing whether it is gaining or losing strength, so you catch a currency turning, not just where it already is.
 - **The standout pair.** The strongest currency versus the weakest, named as the pair to watch. A read, not a signal.
@@ -19,11 +19,11 @@ A free currency strength meter for MetaTrader 5. It ranks the eight major curren
 
 ## Built to just work on your broker
 
-It auto-detects your broker's symbol naming, including suffixes like .pro or .m, and skips any pair your broker does not offer. The panel footer shows how many of the 28 pairs it found.
+It auto-detects your broker's symbol naming, including suffixes like .pro or .m, and skips any pair your broker does not offer. The panel footer shows how many of the 28 pairs the ranking is built from.
 
 ## Configure it to your style
 
-- Four timeframes you choose for the alignment cells, and which one drives the ranking and main bar.
+- Four timeframes you choose for the alignment cells, and which one drives the ranking.
 - Lookback in bars for the percent-change window.
 - Toggle the momentum arrows and the pair read on or off.
 
@@ -35,6 +35,6 @@ Free. Works on any symbol and timeframe.
 
 ---
 
-Current version: **1.0**
+Current version: **1.10**
 
 On the MQL5 Market: [Currency Strength Meter Multi Timeframe](https://www.mql5.com/en/market/product/184632)

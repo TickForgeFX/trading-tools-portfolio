@@ -31,6 +31,6 @@ Free. Works on any symbol and any timeframe, and updates the moment you attach i
 
 ---
 
-Current version: **1.10**
+Current version: **1.20**
 
 On the MQL5 Market: [ADR Average Daily Range Meter](https://www.mql5.com/en/market/product/183839)
