@@ -53,7 +53,9 @@ still forming. A bar close changes the chart only by fixed rules: a level is swe
 mitigated, extends to the right or takes in an overlapping gap, an older zone makes way for a
 newer one, and the premium and discount bracket moves with the newest bars. At the far left edge
 of the scan (the most recent 1,500 bars by default), older structure is re-read as the window
-moves on.
+moves on. Labels are laid out again at each bar close and whenever you zoom, scroll or resize the
+chart: a label can move a little, two liquidity labels on one level share one, and a label with no
+room hides until there is room. This changes where a label sits, not what it marks.
 
 ## Make it yours
 
@@ -125,6 +127,6 @@ suite before release.
 
 ---
 
-Current version: **1.60**
+Current version: **1.70**
 
 On the MQL5 Market: [SMC and ICT Structure Liquidity Dashboard](https://www.mql5.com/en/market/product/182687)
