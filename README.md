@@ -118,22 +118,6 @@ Pivot points are support and resistance levels a large part of the market watche
 
 On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/186251). [Full description](products/pivot-points/PRODUCT_PAGE.md).
 
-### One Click Close and Breakeven Panel
-
-One Click Close is a fast exit cockpit for MetaTrader 5. When you need to act right now you can close everything, take only your winners, cut only your losers, flatten one direction, move every trade to break-even, or clear your pending orders, each from a single button.
-
-![The exit panel: Close All, Close Profits, Close Losses, Close Longs, Close Shorts, Breakeven All and Delete Pendings](screenshots/OneClickClose/banners/occ-hero-dark.png)
-
-On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/185051). [Full description](products/one-click-close/PRODUCT_PAGE.md).
-
-### Auto Close by Time and Weekend
-
-A free scheduled closer for MetaTrader 5. Attach it to a chart, set a time, and it flattens your open trades for you: at a set time each day, before the weekend gap, or once a trade has been open too long.
-
-![Set the time, it closes: open trades flattened daily, before the weekend gap, or after a maximum holding time](screenshots/AutoCloseByTime/banners/act-hero-dark.png)
-
-On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/185602). [Full description](products/auto-close-by-time/PRODUCT_PAGE.md).
-
 ### Basket Close Manager
 
 If you run a grid, a hedge, or several trades toward one idea, you care about the whole basket, not each ticket. Attach this to a chart, set a total profit target, and it closes all your open trades at once the moment they add up to it.
