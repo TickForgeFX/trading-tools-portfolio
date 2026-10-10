@@ -79,6 +79,11 @@ decisions stay yours. Works on any symbol and any timeframe.
 
 ## Changelog
 
+- v1.7: fixes to the dashboard and to the labels on the chart. The dashboard's M15, H1, H4 and D1 rows now refresh
+  when their own timeframe opens a new bar; before, they refreshed only when your chart's bar closed. On W1 and MN
+  charts the previous day high and low now move to the new day each day. Chart labels no longer print on top of each
+  other or get cut off at the chart's edges: they are laid out again after each new bar and whenever you zoom, scroll
+  or resize the chart. The colour key's footer now shows only the version. Detection still runs on closed bars only.
 - v1.6: three fixes. Order blocks now show with market structure switched off; switching structure off turns off
   only the structure itself: the BOS / CHoCH breaks, the HH, HL, LH and LL labels, and the BOS / CHoCH alerts. The
   previous day high and low lines on the chart now come from the daily candles, so they match the dashboard's PDH /
