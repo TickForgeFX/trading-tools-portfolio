@@ -36,6 +36,14 @@ Where the volume traded, day by day: a volume profile for each day or session wi
 
 On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/199693) and [MetaTrader 4](https://www.mql5.com/en/market/product/199703). [Full description](products/volume-profile/PRODUCT_PAGE.md).
 
+### Trading Journal for EAs and Prop Firms
+
+An automated trading journal that splits your account by EA. It is a MetaTrader 5 indicator, so it goes on any chart, even beside the EA running there. It reads the account's history and gives every EA with a closed trade a row: its trades, its net after commission and swap, and a curve of its closed results, with manual trades as a row too. Set your prop firm's rules and it shows the room left before each limit. It never trades.
+
+![Every EA on its own row: each EA's trades, net and curve on one card, manual trades as a row, and the room left before each prop firm limit](screenshots/TradingJournal/banners/tj-hero-dark.png)
+
+On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/200565). [Full description](products/trading-journal/PRODUCT_PAGE.md).
+
 ## Free tools
 
 ### Visual Risk and Position Size Calculator
@@ -125,30 +133,6 @@ If you run a grid, a hedge, or several trades toward one idea, you care about th
 ![Your whole basket, one target: it closes your open trades together when their combined result reaches your number](screenshots/BasketCloseManager/banners/bcm-hero-dark.png)
 
 On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/185323). [Full description](products/basket-close-manager/PRODUCT_PAGE.md).
-
-### Trading Performance Statistics
-
-A free performance panel for MetaTrader 5. It reads your closed trade history and totals up the numbers most traders never actually calculate: net P/L, win rate, profit factor, average win vs loss, payoff, expectancy, best and worst.
-
-![Know your edge, or your leak: win rate, profit factor, expectancy and more, read from your closed history](screenshots/PerformanceStats/banners/ps-hero-dark.png)
-
-On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/184488). [Full description](products/performance-stats/PRODUCT_PAGE.md).
-
-### Prop Firm Drawdown and Daily Loss Guard
-
-A free risk panel for MetaTrader 5. It watches the two rails that end most prop-firm accounts, the daily loss limit and the overall (max) loss limit, and shows you exactly how close you are, live, with progress bars and an alert before you breach.
-
-![Know your rails before you breach them: daily loss and max drawdown as progress bars toward their limits](screenshots/PropFirmGuard/banners/pfg-hero-dark.png)
-
-On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/184431). [Full description](products/prop-firm-guard/PRODUCT_PAGE.md).
-
-### Prop Firm Challenge Objectives Tracker
-
-A funded-account challenge is decided by three numbers, and your terminal shows you none of them. This panel tracks all three on your chart: how much of the profit target you have made, how many trading days you have banked, and how much of your total profit came from your single best day.
-
-![Three numbers decide a challenge: the profit target, trading days and the consistency rule on one panel](screenshots/PropFirmChallengeTracker/banners/cht-hero-dark.png)
-
-On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/189565). [Full description](products/prop-firm-challenge-tracker/PRODUCT_PAGE.md).
 
 ## Custom work
 

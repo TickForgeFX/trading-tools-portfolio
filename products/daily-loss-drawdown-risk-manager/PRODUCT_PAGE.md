@@ -112,7 +112,7 @@ Alerts are not delivered in the tester at all; the card and the log show every e
 
 It is not a trade manager: no break-even, no trailing stop, no partial profit-taking, no entries and no signals. Our Trade Manager does those, for the trades on its own chart's symbol. This one governs every trade on the account from one chart, and the only things it ever does to a trade are close it or give it a stop.
 
-It is not only a monitor either. We publish a free panel that shows your two loss limits and never touches a trade. This one acts on them.
+It is not only a monitor either. Our Trading Journal shows the room left before your two loss limits and never touches a trade. This one acts on them.
 
 ## Good to know
 
