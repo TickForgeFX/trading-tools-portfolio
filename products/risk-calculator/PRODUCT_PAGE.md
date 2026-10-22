@@ -14,7 +14,7 @@ Drag three lines onto your chart, your entry, your stop loss and your target, an
 - **Reward-to-risk** and the potential return at your take profit.
 - **Direction**, long or short, read from where your lines sit.
 
-This one sizes the trade and stops there. If you want the same sizing with the order sent from the panel, then partial closes, break-even and a trailing stop after the fill, that is [Trade Manager with Risk Sizing and Trailing Stops](https://www.mql5.com/en/market/product/189281).
+This one sizes the trade and stops there. [Trade Manager with Risk Sizing and Trailing Stops](https://www.mql5.com/en/market/product/189281) sizes it the same way and then does the rest: its button sends the order at that size, break-even, three partial closes and a trailing stop manage it, and a daily loss limit you set closes the trades it opened and refuses new entries when it is reached. A calculator, an order panel, a trade manager and a loss limit, in one.
 
 ## Your plan stays where you put it
 

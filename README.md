@@ -6,7 +6,7 @@ TickForgeFX makes tools for MetaTrader 5, several with a MetaTrader 4 twin: indi
 
 ### Trade Manager with Risk Sizing and Trailing Stops
 
-It manages the trade you opened by hand. Break-even, up to three partial closes, a trailing stop and a loss limit that acts, on every tick, whether or not you are watching.
+Risk-sized entry, break-even, partial closes, a trailing stop and a daily loss limit, in one panel for MetaTrader 5. It manages every trade on the symbol, however it was opened, and stops you for the day when your loss limit is reached.
 
 ![Exactly what you get: a real short on gold, being managed. The panel, the lines and every number on them are the product running, not a mock-up](screenshots/TradeManagerRS/banners/tmrs-chart-dark.png)
 

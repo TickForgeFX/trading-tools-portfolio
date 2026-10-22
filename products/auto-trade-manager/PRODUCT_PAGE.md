@@ -14,7 +14,7 @@ A free position manager for MetaTrader 5. Attach it to a chart and it looks afte
 
 Each rule is toggled on or off independently. Run just one, or all three together.
 
-This one manages a trade you already opened. If you also want it planned and sized before it opens, from a stop you drag on the chart, and three partial rungs instead of one, that is [Trade Manager with Risk Sizing and Trailing Stops](https://www.mql5.com/en/market/product/189281).
+This one manages a trade you already opened. [Trade Manager with Risk Sizing and Trailing Stops](https://www.mql5.com/en/market/product/189281) manages it too, with three partial closes and four trailing modes, and adds the two things this one cannot do: it sizes and sends the trade from a stop you drag on the chart, and a daily and overall loss limit closes the trades it opened and refuses new entries when it is reached, with the daily reset at the hour your prop firm uses.
 
 ## Trailing behind structure
 
