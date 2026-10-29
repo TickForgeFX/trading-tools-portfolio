@@ -24,6 +24,12 @@ Each level is a labelled line showing its price, and a compact forge panel lists
 
 Optional, and off until you switch it on. Choose any mix of a popup, a sound, a push notification to your phone, and an email. It fires once per level per day, it will not announce a level price had already passed when you attached the indicator, and it stays quiet when the period rolls over and every pivot recalculates at once. It tells you price reached a level you chose. It is not a suggestion to trade it.
 
+## Midlines, when you want them
+
+Switch on "Show a midline between each pair of levels" and a muted dashed line marks the halfway point between every two neighbouring levels on the chart, in a neutral grey mixed from your chart's own colours, so it does not look like one of the coloured levels. The midlines follow whichever levels you show, and they are off until you switch them on. "Alert when price reaches a midline" is a separate switch, also off by default: it uses the same channels as the level alert, fires once per midline per day, and watches the midlines only while they are shown.
+
+![The grey dashed lines: one halfway between each pair of neighbouring levels, on a live XAUUSD M15 chart](../../screenshots/PivotPoints/banners/pp-midlines-dark.png)
+
 ## Straight from your broker's candles
 
 Levels are computed from your broker's own previous day, week or month candle, so they match the bars you already see. Because the source candle is closed, the levels are fixed for the whole period. No repaint.
@@ -36,6 +42,6 @@ Works on any symbol and any timeframe. Switch method or period, choose how many 
 
 ---
 
-Current version: **1.20**
+Current version: **1.30**
 
 On the MQL5 Market: [Pivot Points Classic Fibonacci Camarilla](https://www.mql5.com/en/market/product/186251)
