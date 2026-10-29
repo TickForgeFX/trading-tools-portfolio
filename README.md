@@ -134,6 +134,14 @@ If you run a grid, a hedge, or several trades toward one idea, you care about th
 
 On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/185323). [Full description](products/basket-close-manager/PRODUCT_PAGE.md).
 
+### Trade Screenshots at Entry and Exit
+
+Every trade's chart, saved by itself. Each time a trade opens or closes on your account, from an EA, the phone or your own hand, this MetaTrader 5 indicator saves a picture of that symbol's chart with the trade drawn on it and its details written in the corner, filed by day, with a page for each day you open in your browser. It never places, changes or closes a trade, and the pictures stay on your PC.
+
+![Every trade's chart, saved by itself: at the open and at the close, with the trade drawn on it and its details in the corner](screenshots/TradeScreenshots/banners/ts-hero-dark.png)
+
+On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/204774). [Full description](products/trade-screenshots/PRODUCT_PAGE.md).
+
 ## Custom work
 
 Custom work is taken through [MQL5 Freelance](https://www.mql5.com/en/job).
