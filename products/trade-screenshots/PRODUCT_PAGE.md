@@ -44,8 +44,7 @@ starts and marked **Captured late**.
 
 - Not a trade manager: it is an indicator, and MetaTrader lets no indicator open, change or close a trade.
 - Not a sender: no Telegram, no e-mail, no web.
-- Not statistics: no totals, no win rate, no calendar. For the numbers per EA, see
-  [Trading Journal for EAs and Prop Firms](https://www.mql5.com/en/market/product/200565).
+- Not statistics: no totals, no win rate, no calendar.
 
 ![Every trade's chart, saved by itself](../../screenshots/TradeScreenshots/banners/ts-hero-dark.png)
 

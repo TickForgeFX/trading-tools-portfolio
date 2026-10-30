@@ -36,14 +36,6 @@ Where the volume traded, day by day: a volume profile for each day or session wi
 
 On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/199693) and [MetaTrader 4](https://www.mql5.com/en/market/product/199703). [Full description](products/volume-profile/PRODUCT_PAGE.md).
 
-### Trading Journal for EAs and Prop Firms
-
-An automated trading journal that splits your account by EA. It is a MetaTrader 5 indicator, so it goes on any chart, even beside the EA running there. It reads the account's history and gives every EA with a closed trade a row: its trades, its net after commission and swap, and a curve of its closed results, with manual trades as a row too. Set your prop firm's rules and it shows the room left before each limit. It never trades.
-
-![Every EA on its own row: each EA's trades, net and curve on one card, manual trades as a row, and the room left before each prop firm limit](screenshots/TradingJournal/banners/tj-hero-dark.png)
-
-On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/200565). [Full description](products/trading-journal/PRODUCT_PAGE.md).
-
 ## Free tools
 
 ### Visual Risk and Position Size Calculator
