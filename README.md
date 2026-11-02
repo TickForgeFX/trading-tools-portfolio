@@ -28,14 +28,6 @@ Before you place a trade, this tells you what it will actually cost you: the spr
 
 On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/194871) and [MetaTrader 4](https://www.mql5.com/en/market/product/195090). [Full description](products/broker-conditions-panel/PRODUCT_PAGE.md).
 
-### Volume Profile with Value Area and Naked POC
-
-Where the volume traded, day by day: a volume profile for each day or session with its POC, value area high and value area low, and the naked POCs the market has not been back to, drawn to the right edge with their dates and prices. Built from one-minute bars on every timeframe, so the levels are the same on M5 and on H4, and a finished day's levels do not move.
-
-![Where the volume traded, day by day: a profile for each day with its POC and value area, and the naked POCs drawn to the right edge with their dates, on EURUSD H1](screenshots/VolumeProfile/banners/vp-hero-dark.png)
-
-On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/199693) and [MetaTrader 4](https://www.mql5.com/en/market/product/199703). [Full description](products/volume-profile/PRODUCT_PAGE.md).
-
 ## Free tools
 
 ### Visual Risk and Position Size Calculator
@@ -133,6 +125,14 @@ Every trade's chart, saved by itself. Each time a trade opens or closes on your 
 ![Every trade's chart, saved by itself: at the open and at the close, with the trade drawn on it and its details in the corner](screenshots/TradeScreenshots/banners/ts-hero-dark.png)
 
 On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/204774). [Full description](products/trade-screenshots/PRODUCT_PAGE.md).
+
+### Volume Profile with Value Area and Naked POC
+
+Where the volume traded, day by day: a volume profile for each day or session with its POC, value area high and value area low, and the naked POCs the market has not been back to, drawn to the right edge with their dates and prices. Built from one-minute bars on every timeframe, so the levels are the same on M5 and on H4, and a finished day's levels do not move.
+
+![Where the volume traded, day by day: a profile for each day with its POC and value area, and the naked POCs drawn to the right edge with their dates, on EURUSD H1](screenshots/VolumeProfile/banners/vp-hero-dark.png)
+
+On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/199693) and [MetaTrader 4](https://www.mql5.com/en/market/product/199703). [Full description](products/volume-profile/PRODUCT_PAGE.md).
 
 ## Custom work
 

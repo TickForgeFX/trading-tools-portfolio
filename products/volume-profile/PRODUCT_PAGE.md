@@ -46,10 +46,6 @@ Six values in the Data Window, readable with iCustom: the prior day's POC, VAH a
 
 The MetaTrader 4 version draws the same profiles by the same rules, with two differences. MetaTrader 4 has tick volume only. And a fresh MetaTrader 4 terminal holds about a day and a half of one-minute bars, so on charts above M1 the card first says "M1 only since" a recent date; scrolling a one-minute chart back, or the History Center, gives it more, and the indicator picks that up by itself.
 
-## About the demo, stated plainly
-
-The demo runs in the Strategy Tester, where a few things differ from a live chart. The histogram rows are drawn in whole bars, so on H1 they look blockier than they will on your chart. In the "Open prices only" mode the tester cannot give an indicator one-minute data without ending the test, so there the profiles are built from the chart's own bars and the card says so, for example "Coarse: from H1 bars"; above H4 in that mode a day is too few bars to profile, so it draws nothing and asks for H4 or lower. Every other mode reads one-minute bars, as a live chart does. Alerts are muted in the tester, but a touched naked POC still ends where it was touched. Nothing can be dragged in the tester, so the fixed-range lines stay where the settings put them.
-
 ## What it does not do
 
 It does not place trades, give signals, or predict where price goes. It does not split volume into buying and selling, because tick volume has no side, and it does not draw TPO letters. On most forex symbols the volume MetaTrader shows is tick volume, the number of price changes, not traded contracts. It measures where activity sat; the decisions stay yours.
