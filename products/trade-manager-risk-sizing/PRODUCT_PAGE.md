@@ -69,9 +69,13 @@ As soon as a position exists the card shows Close All, Close 50%, Set BE, Close 
 
 On this market a paid product's demo runs only in the Strategy Tester. You can place a trade from the panel there and watch break-even, the partial closes and the trailing stop run as the test advances. MetaTrader sends no mouse events to an Expert Advisor in a test, so the lines cannot be dragged there: set the stop in Points or ATR mode instead. Alerts cannot be delivered in the tester, but each event still shows in the panel footer, on the chart and in the log. In a non-visual run on a netting account funded under 2000, which is how this market's automated check runs it, it opens minimum-lot sample trades by itself and says so in the journal. In a visual run it never trades unless you press a button.
 
+## A user guide and presets, for buyers
+
+After you buy, send me an MQL5 message and I will send you the user guide, a PDF that explains every input, and 14 ready-made presets for different setups, from gold and ATR distances to prop firm limits.
+
 ## If you need me, I answer
 
-Ask in the comments or by MQL5 message and you get a reply from the person who wrote the code, not a support desk. A bug report gets a fix rather than a workaround.
+Ask in the comments or by MQL5 message and you get a reply from me, not a support desk. A bug report gets a fix rather than a workaround.
 
 Built by TickForgeFX.
 
