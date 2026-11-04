@@ -20,6 +20,14 @@ Put it on one chart and it enforces your daily loss limit and max drawdown acros
 
 On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/197828) and [MetaTrader 4](https://www.mql5.com/en/market/product/197830). [Full description](products/daily-loss-drawdown-risk-manager/PRODUCT_PAGE.md).
 
+### Automated Trading Journal
+
+An automated trading journal that splits your account by EA, and then answers why. It is an indicator, so it goes on any chart, even beside the EA running there, and it never trades. It reads the account's history and gives every EA with a closed trade a row: its trades, its net after commission and swap, and a curve of its closed results, with manual trades as a row too. Then it shows each EA's hours and sessions, which of your most active EAs lose on the same days, how the account's fills landed against the price asked, where your prop firm limits stand, how an EA's trading compares with its own backtest, and what every trade would have made at one lot size.
+
+![Every EA on its own row: each EA's trades, net and curve on one card, manual trades as a row, and the room left before each prop firm limit](screenshots/AutomatedTradingJournal/banners/atjpro-hero-dark.png)
+
+On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/206115). [Full description](products/automated-trading-journal/PRODUCT_PAGE.md).
+
 ### Spread Swap and Broker Conditions Panel
 
 Before you place a trade, this tells you what it will actually cost you: the spread and your commission converted into your account currency, at the lot size you are about to trade, on this broker and this symbol.
