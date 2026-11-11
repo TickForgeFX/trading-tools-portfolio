@@ -4,9 +4,13 @@
 
 ![Opened by hand, managed anyway: a trade opened with F9, on the phone or by another EA is managed too, and the stop only ever moves toward you](../../screenshots/TradeManagerRS/banners/tmrs-adopt-dark.png)
 
+![Your stop, held by the tool, with a safety stop at your broker behind it: what the card shows while a held trade is open](../../screenshots/TradeManagerRS/banners/tmrs-held-dark.png)
+
 **Risk-sized entry, break-even, partial closes, a trailing stop and a daily loss limit, in one panel for MetaTrader 5.** Drag your stop to where the trade is wrong and the lot size follows your risk. Its button sends the order at that size. Then it manages the trade on every tick, whether you opened it from the panel, by hand, from the phone or with another EA, and it stops you for the day when your loss limit is reached.
 
 It never decides to trade. There are no signals and no strategy in it. You choose the direction and the levels; it does the arithmetic, places the order and runs your rules.
+
+And if you want it to, it keeps your rules on the days you would rather not, and keeps your stop through a spread spike with a safety stop at your broker behind it.
 
 ## Four tools you would otherwise run side by side
 
@@ -49,9 +53,37 @@ As soon as a position exists the card shows Close All, Close 50%, Set BE, Close 
 
 - Set a daily and an overall limit as a percent of your account. The panel shows the room you have left before either one is reached.
 - On a breach it cancels its working orders, closes the trades it opened and refuses new entries. Closing trades it did not open is a separate switch, off until you turn it on, and it needs Manage set to every trade on the symbol.
-- The daily reset hour is yours to set in server time, so the day rolls when your prop firm says it does rather than at midnight.
+- The daily reset hour is yours to set, in server time or on your prop firm's own clock: Prague or New York time with their summer time changes, or UTC. So the day rolls when the firm says it does, even in the weeks when the US and Europe change their clocks on different Sundays.
+- The daily limit can be sized from your account size or from the day's start, the higher of balance and equity at the reset.
+- With the daily limit on, the panel shows how many full stops at your plan's risk still fit before the nearer loss limit.
+- An optional daily profit target, shown while the loss limits are on, shows how far today's closed trades have come toward it and how much is left. It only shows: it never closes or refuses anything.
 - The overall limit measures from the highest equity the account has reached by default, so it protects what you have made and not only what you deposited.
 - A withdrawal is not treated as a trading loss, and a deposit does not widen your limits.
+
+## Rules for the day, if you want them
+
+Each one is off until you switch it on. The first four refuse Place with their reason on the button.
+
+- A limit on the trades opened per day, counting every trade on the account however it was opened.
+- A pause of a number of minutes after a losing trade, and a stop for the day after a number of losses in a row.
+- Trading hours in server time, such as 08:00-17:00, overnight windows included.
+- **Lock the day's rules.** While the lock is on, a setting can be tightened at once but loosened only from the next daily reset, and switching the lock off waits for the reset too. The loss limits, the risk per trade and these rules are all covered, and clearing a tripped loss limit is refused while locked. Removing the EA, deleting its saved state, trading from another terminal, or changing the account size override, Manage or the magic number gets round it: it slows you down, it cannot stop you.
+- **A check after a loss.** After a losing trade today, a plan whose risk setting is higher than the largest you entered from the panel today asks for a second click and names the rise, for example "1.5% after 2 losses, earlier 0.5%", even with the second click switched off.
+- **A stop moved further is put back.** On the trades it manages, a stop moved further from price by hand, or taken away, goes back where it last stood. If price is already past that level, the trade is closed, as that stop would have closed it. After five put-backs on one trade it leaves the stop alone.
+- **Other trades while a rule refuses.** Optionally, a trade opened by hand, from the phone or by another EA while a rule refuses new trades is closed at once. Its own trades are never closed this way. This needs Manage set to every trade on the symbol.
+
+## Your stop through a spread spike, with a safety stop at your broker
+
+By default your broker holds the stop, as before. Set "Who holds the stop of a trade this tool opens" to "This tool, with a safety stop at your broker" and every trade it opens from then on works like this:
+
+- The order goes out with a safety stop at your broker beyond your stop, by default half the stop's distance further. A closed terminal, a lost connection or a crash never leaves that trade without a stop at your broker.
+- Your own stop is held by the tool and drawn on the chart. It closes the trade when price touches it, when a candle closes beyond it, or when price stays beyond it for a number of seconds, as you choose.
+- While the spread is above a multiple of its normal level (3 times by default, normal being the median of the last day), your stop waits, so a rollover spike does not take it. The safety stop at your broker is never ignored.
+- The lot is sized to your stop. The plan gains a "Worst (Safety Stop)" row, the money lost if the safety stop fills, before slippage, and while the trade is open the card shows your stop and the safety stop that holds if MetaTrader closes.
+- Break-even, the lock steps, the trailing stop and Set BE move your stop, and the safety stop follows at the same distance, only ever tightening. A safety stop moved further or taken away by hand is put back, up to five times a trade; with price already past it, the trade is closed.
+- Your stop survives a restart. Switch back to your broker and each held trade's broker stop is moved to your stop.
+- On a netting account a held stop opens a position and does not add to one: with a position already open on the symbol, Place refuses. Trades opened by hand or by another EA keep their own broker stop.
+- The honest limit: your stop needs MetaTrader running. While it is closed, and while your stop waits out a spread spike, a candle close or its seconds, price can run on to the safety stop, so a trade can lose more than your stop allowed: about the worst case the panel showed, and more if price gaps through the safety stop.
 
 ## What it refuses to do
 
@@ -69,11 +101,12 @@ As soon as a position exists the card shows Close All, Close 50%, Set BE, Close 
 - A partial needs a position big enough to split. On a symbol whose smallest tradable size is 0.01, Partial 1 needs 0.02 or more.
 - On a trade that arrived with no stop, the ATR, Chandelier, candle, moving average and Parabolic SAR trails can set its first stop on the losing side of entry, where the volatility or the structure puts it. Break-even, the extra lock steps, the fixed-distance trail and the best profit trail never do.
 - An optional history section shows win rate, profit factor, average per trade and your best and worst day, read from your broker's own closed deals.
+- An optional execution record writes every order it sends to a CSV file per account in the MQL5\Files folder: the time, the action, the price asked, bid and ask, the fill, the slippage in points, how long your broker took to answer, and the result.
 - Partials, break-even, trailing, the target line, the alerts and the account limits can each be switched off. With all of them off it is simply a risk-sized entry panel.
 
 ## About the demo
 
-On this market a paid product's demo runs only in the Strategy Tester. You can place a trade from the panel there and watch break-even, the partial closes and the trailing stop run as the test advances. MetaTrader sends no mouse events to an Expert Advisor in a test, so the lines cannot be dragged there: set the stop in Points or ATR mode instead. Alerts cannot be delivered in the tester, but each event still shows in the panel footer, on the chart and in the log. In a non-visual run on a netting account funded under 2000, which is how this market's automated check runs it, it opens minimum-lot sample trades by itself and says so in the journal. In a visual run it never trades unless you press a button. The tester answers every order at once, so the sending state does not show there, and it sends no keyboard events, so the shortcuts do nothing.
+On this market a paid product's demo runs only in the Strategy Tester. You can place a trade from the panel there and watch break-even, the partial closes and the trailing stop run as the test advances. MetaTrader sends no mouse events to an Expert Advisor in a test, so the lines cannot be dragged there: set the stop in Points or ATR mode instead. Alerts cannot be delivered in the tester, but each event still shows in the panel footer, on the chart and in the log. In a non-visual run on a netting account funded under 2000, which is how this market's automated check runs it, it opens minimum-lot sample trades by itself and says so in the journal. In a visual run it never trades unless you press a button. The tester answers every order at once, so the sending state does not show there and the execution record's answer times read near 0, and it sends no keyboard events, so the shortcuts do nothing. A stop held by the tool and its safety stop run there too; to see the spread filter at work, test on real ticks.
 
 ## A user guide and presets, for buyers
 
@@ -87,6 +120,6 @@ Built by TickForgeFX.
 
 ---
 
-Current version: **1.80**
+Current version: **1.90**
 
 On the MQL5 Market: [Trade Manager with Risk Sizing and Trailing Stops](https://www.mql5.com/en/market/product/189281)
