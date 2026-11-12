@@ -45,6 +45,6 @@ Free. Works on any symbol and any timeframe.
 
 ---
 
-Current version: **1.10**
+Current version: **1.20**
 
 On the MQL5 Market: [Basket Close Manager](https://www.mql5.com/en/market/product/185323)
