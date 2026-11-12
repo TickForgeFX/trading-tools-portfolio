@@ -46,7 +46,7 @@ Built by TickForgeFX.
 
 ---
 
-Current version: **1.40**, on MetaTrader 5 and MetaTrader 4
+Current version: **1.50**, on MetaTrader 5 and MetaTrader 4
 
 On the MQL5 Market:
 
