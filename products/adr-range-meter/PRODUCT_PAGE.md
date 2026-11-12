@@ -7,7 +7,7 @@ See how far this market usually moves in a day, how much of that range it has al
 ## What it shows
 
 - **Average Daily Range** over the last N days, the market's typical daily move.
-- **Used today**, how much of that range price has already covered, in points and percent.
+- **Used today**, how much of that range price has already covered, as a percentage, and the **range so far** in points.
 - **Room left** up and down before the day reaches an average-sized range.
 - **ADR High and ADR Low**, the projected day ceiling and floor drawn on the chart, each with a price chip that stays visible even when the level is off-screen.
 

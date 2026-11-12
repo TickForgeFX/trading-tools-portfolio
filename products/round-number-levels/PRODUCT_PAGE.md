@@ -2,7 +2,7 @@
 
 ![The levels price remembers: the majors solid and the half levels dotted, drawn automatically](../../screenshots/RoundNumberLevels/banners/rnl-hero-dark.png)
 
-A free round-number indicator for MetaTrader 5. Attach it to any chart and it draws the psychological round-number price levels that traders watch, the major "00" figures as solid lines and the "50" half levels as dotted lines, each labelled with its price. It follows price automatically as the market moves.
+A free round-number indicator for MetaTrader 5. Attach it to any chart and it draws the psychological round-number price levels that traders watch: the major figures as solid lines, each labelled with its price, and the half levels between them as dotted lines. It follows price automatically as the market moves.
 
 ## What it does
 
