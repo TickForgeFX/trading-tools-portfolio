@@ -49,6 +49,7 @@ The manager works silently, so this tells you the moment it does something. Get 
 
 - **This chart's symbol, or every symbol.** One toggle.
 - **By magic number, or everything.** Manage one EA's trades, or leave it at 0 to manage every position on the account, including trades you placed by hand.
+- **Or only your manual trades.** Switch on "Only manage manual trades" and it manages only trades with magic number 0, the number MetaTrader gives a trade you place by hand, so an EA trading under its own number is left alone. Trades from the MetaTrader phone app and the web terminal also carry 0 and are managed too. A trade sent through a trade panel carries that panel's magic number, so it is managed only if the panel uses 0, and this option cannot tell an EA that trades with 0 apart from your own trades.
 - **Works the moment you attach it** to any symbol and any timeframe.
 
 ## Built to be safe
@@ -84,6 +85,6 @@ Built by TickForgeFX.
 
 ---
 
-Current version: **1.40**
+Current version: **1.60**
 
 On the MQL5 Market: [Auto Breakeven Trailing Stop and Partial Close](https://www.mql5.com/en/market/product/184556)
