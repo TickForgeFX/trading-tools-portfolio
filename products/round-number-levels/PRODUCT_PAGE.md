@@ -23,6 +23,6 @@ The panel is draggable, lockable, and always stays fully on-screen. Works on any
 
 ---
 
-Current version: **1.10**
+Current version: **1.20**
 
 On the MQL5 Market: [Round Number Levels](https://www.mql5.com/en/market/product/184780)
