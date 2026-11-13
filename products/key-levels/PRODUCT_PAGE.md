@@ -13,7 +13,7 @@ The previous day's high and low, the weekly open, last week's range: the lines m
 - **Daily and weekly open**, the developing opens watched heavily intraday.
 - **Previous month** high and low (optional).
 
-Each level is a labelled line, colour-coded by period, and a compact panel groups them by period and lists every level, its price, and how far price sits from it. Choose whether that distance reads in pips, in price, or as a percentage.
+Each level is a labelled line in its group's colour, and a compact panel lists them under the same four groups, with every level's price and how far price sits from it. Choose whether that distance reads in pips, in price, or as a percentage.
 
 ## Levels that do not vanish when you zoom in
 
@@ -35,6 +35,6 @@ Works on any symbol and any timeframe, and is most useful on intraday charts whe
 
 ---
 
-Current version: **1.40**
+Current version: **1.50**
 
 On the MQL5 Market: [Daily Weekly Monthly Key Levels](https://www.mql5.com/en/market/product/183203)
