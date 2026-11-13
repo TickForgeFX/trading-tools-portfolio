@@ -64,7 +64,7 @@ On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/182
 
 ### Candle Close Countdown Timer
 
-A free countdown for MetaTrader 5. Attach it to any chart and it shows the exact time left on the current candle, a progress bar as the candle forms, and a live countdown for a whole set of higher timeframes at the same time.
+A free countdown for MetaTrader 5. Attach it to any chart and it shows the exact time left on the current candle, a progress bar as the candle forms, and a live countdown for the other timeframes, M5 to D1, at the same time.
 
 ![Never miss a candle close: the time left on the current candle, a progress bar and a countdown for other timeframes](screenshots/CandleCloseCountdown/banners/ccc-hero-dark.png)
 
@@ -72,7 +72,7 @@ On the MQL5 Market for [MetaTrader 5](https://www.mql5.com/en/market/product/184
 
 ### Round Number Levels
 
-A free round-number indicator for MetaTrader 5. Attach it to any chart and it draws the psychological round-number price levels that traders watch, the major "00" figures as solid lines and the "50" half levels as dotted lines, each labelled with its price.
+A free round-number indicator for MetaTrader 5. Attach it to any chart and it draws the psychological round-number price levels that traders watch: the major figures as solid lines, each labelled with its price, and the half levels between them as dotted lines.
 
 ![The levels price remembers: the majors solid and the half levels dotted, drawn automatically](screenshots/RoundNumberLevels/banners/rnl-hero-dark.png)
 

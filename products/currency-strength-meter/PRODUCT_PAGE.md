@@ -13,13 +13,13 @@ A free currency strength meter for MetaTrader 5. It ranks the eight major curren
 
 ## Stable and transparent
 
-- **Closed bars only, no repaint.** Strength updates when a bar closes, not tick by tick. Most free meters jump on every price change, which is noise. This one holds still.
+- **Closed bars only, no repaint.** Strength updates when a bar closes, not tick by tick, so it holds still instead of jumping on every price change.
 - **A transparent method.** Strength is the averaged percent change of each currency across the pairs that contain it, oriented so up means stronger. No hidden formula.
 - **It measures, it does not predict.** No buy and sell arrows, no promises.
 
 ## Built to just work on your broker
 
-It auto-detects your broker's symbol naming, including suffixes like .pro or .m, and skips any pair your broker does not offer. The panel footer shows how many of the 28 pairs the ranking is built from.
+It auto-detects your broker's symbol naming, including suffixes like .pro or .m, and skips any pair your broker does not offer. If your broker offers none of a currency's seven pairs, that currency shows "-" at the bottom of the ranking instead of a value. If it does not offer the pair between the strongest and the weakest currency, "Cleanest pair" reads "Not at this broker". The panel footer shows how many of the 28 pairs the ranking is built from.
 
 ## Configure it to your style
 
@@ -35,6 +35,6 @@ Free. Works on any symbol and timeframe.
 
 ---
 
-Current version: **1.10**
+Current version: **1.20**
 
 On the MQL5 Market: [Currency Strength Meter Multi Timeframe](https://www.mql5.com/en/market/product/184632)
